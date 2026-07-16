@@ -1,0 +1,26 @@
+{
+  "name": "dsynk-web",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev -p 3026",
+    "build": "next build",
+    "start": "next start -p 3026",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "next": "^14.0.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "i18next": "^23.7.0",
+    "react-i18next": "^13.5.0",
+    "framer-motion": "^10.16.0",
+    "resend": "^2.1.0",
+    "react-icons": "^4.12.0"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.0",
+    "autoprefixer": "^10.4.0",
+    "postcss": "^8.4.0"
+  }
+}
