@@ -26,6 +26,7 @@ export default function CheckoutPage() {
     numeroTarjeta: '',
     fechaExpiracion: '',
     cvv: '',
+    cvv_raw: '',
   })
 
   const [errors, setErrors] = useState({})
@@ -99,9 +100,29 @@ export default function CheckoutPage() {
   }
 
   const handleCvvChange = (e) => {
-    let value = e.target.value.replace(/\D/g, '')
-    if (value.length > 4) value = value.slice(0, 4)
-    setFormData(prev => ({ ...prev, cvv: value }))
+    let value = e.target.value
+    
+    // Si el usuario está borrando (la longitud disminuyó)
+    if (value.length < formData.cvv.length) {
+      const newRaw = formData.cvv_raw.slice(0, -1)
+      const newDisplay = '•'.repeat(newRaw.length)
+      setFormData(prev => ({ ...prev, cvv: newDisplay, cvv_raw: newRaw }))
+      if (errors.cvv) {
+        setErrors(prev => ({ ...prev, cvv: '' }))
+      }
+      return
+    }
+    
+    // Obtener solo el último carácter ingresado
+    const lastChar = value.charAt(value.length - 1)
+    
+    // Si es un número, agregarlo
+    if (/\d/.test(lastChar) && formData.cvv_raw.length < 4) {
+      const newRaw = formData.cvv_raw + lastChar
+      const newDisplay = '•'.repeat(newRaw.length)
+      setFormData(prev => ({ ...prev, cvv: newDisplay, cvv_raw: newRaw }))
+    }
+    
     if (errors.cvv) {
       setErrors(prev => ({ ...prev, cvv: '' }))
     }
@@ -141,8 +162,8 @@ export default function CheckoutPage() {
       }
     }
 
-    if (!formData.cvv) newErrors.cvv = t('checkout.validation.cvv_required')
-    else if (formData.cvv.length < 3) newErrors.cvv = t('checkout.validation.cvv_invalid')
+    if (!formData.cvv_raw) newErrors.cvv = t('checkout.validation.cvv_required')
+    else if (formData.cvv_raw.length < 3) newErrors.cvv = t('checkout.validation.cvv_invalid')
 
     setErrors(newErrors)
     return Object.keys(newErrors).length === 0
@@ -175,7 +196,7 @@ export default function CheckoutPage() {
           nombreTarjeta: formData.nombreTarjeta,
           numeroTarjeta: formData.numeroTarjeta,
           fechaExpiracion: formData.fechaExpiracion,
-          cvv: formData.cvv,
+          cvv: formData.cvv_raw,
           cartItems: cartItems,
           subtotal: subtotal,
           iva: iva,
@@ -343,9 +364,16 @@ export default function CheckoutPage() {
                       </div>
                       <div>
                         <label className="block text-sm font-medium text-gray-700 mb-2">{t('checkout.cvv')} *</label>
-                        <input type="text" name="cvv" value={formData.cvv} onChange={handleCvvChange}
+                        <input
+                          type="password"
+                          name="cvv"
+                          value={formData.cvv}
+                          onChange={handleCvvChange}
                           className={`w-full px-4 py-3 rounded-lg border font-mono ${errors.cvv ? 'border-red-500 bg-red-50' : 'border-gray-300'} focus:ring-2 focus:ring-gray-900 focus:border-transparent`}
-                          placeholder={t('checkout.cvv_placeholder')} maxLength="4" />
+                          placeholder="•••"
+                          maxLength="4"
+                          autoComplete="off"
+                        />
                         {errors.cvv && <p className="mt-1 text-sm text-red-500">{errors.cvv}</p>}
                         <p className="mt-1 text-xs text-gray-500">{t('checkout.cvv_help')}</p>
                       </div>
