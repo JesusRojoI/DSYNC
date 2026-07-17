@@ -99,12 +99,7 @@ export default function SuccessPage() {
               {t('success.back_to_home')}
             </Link>
             
-            <a
-              href="mailto:informes@dsynk.com"
-              className="px-8 py-4 border-2 border-gray-300 text-gray-700 rounded-full font-semibold text-lg hover:border-gray-400 transition-colors"
-            >
-              {t('success.contact_support')}
-            </a>
+            
           </div>
         </motion.div>
       </div>

@@ -382,5 +382,283 @@
     "support_message": "If you have any questions about your order, please contact us at",
     "back_to_home": "Back to home",
     "contact_support": "Contact support"
-  }
+  },
+   "privacy": {
+    "title": "Privacy Notice",
+    "company": "JUSTO CREATIVO, S.A. DE C.V.",
+    "last_update": "Last modified: July 2026",
+    "sections": {
+      "1": {
+        "title": "Data Controller",
+        "1_1": "JUSTO CREATIVO, S.A. DE C.V. (hereinafter, the \"Controller\"), RFC JCR210416DL6, with address at Calle Monte Elbruz, No. 124, Piso 2, Int 212 B, Colonia Lomas De Chapultepec III Sección, Alcaldía Miguel Hidalgo, C.P. 11000, Mexico City, is responsible for the processing of personal data collected through its website and the contact methods made available to its clients and users.",
+        "1_2": "For any matter related to the protection of personal data, the Controller provides the email address informes@dsynk.com.mx and the website dsynk.com.mx, as well as other contact methods indicated on the site itself."
+      },
+      "2": {
+        "title": "Personal Data Collected",
+        "2_1": "The Controller may collect personal data directly (when provided by the data subject) or indirectly (through other sources permitted by law), including but not limited to:",
+        "2_2": "Identification data: name, surname, country or city of residence.",
+        "2_3": "Contact data: email address, phone number, digital contact profiles.",
+        "2_4": "Data related to commercial activity: online store name, business line, e-commerce website address, as well as general information necessary for the provision of consulting and SEO services.",
+        "2_5": "Billing data: company name or trade name, tax ID (RFC), tax address, and other data required for issuing tax receipts.",
+        "2_6": "Site usage data: browsing information, pages visited, time spent, and referral sources, obtained through cookies and similar technologies.",
+        "2_7": "The Controller does not intentionally request sensitive personal data; if the data subject decides to provide it, it is understood that they do so under their own responsibility and with the corresponding consent."
+      },
+      "3": {
+        "title": "Purposes of Processing",
+        "3_1": "The personal data of the data subject will be used for the following primary purposes, necessary for the legal relationship with the Controller:",
+        "3_2": "Manage the creation and administration of user registrations or accounts on the website.",
+        "3_3": "Address requests for information, questions, comments, or quotes regarding consulting, auditing, and SEO optimization services for e-commerce.",
+        "3_4": "Process contracting requests, payments, and billing for the services offered.",
+        "3_5": "Provide customer support and follow up on ongoing projects.",
+        "3_6": "Develop diagnoses, analyses, and SEO strategies that require basic information about the online store and the data subject's business.",
+        "3_7": "Additionally, the data may be used for the following secondary purposes:",
+        "3_8": "Sending commercial communications, newsletters, educational content, invitations to virtual or in-person events, and messages related to the Controller's services and activities.",
+        "3_9": "Conducting satisfaction surveys, internal market studies, and statistical analyses to improve services and user experience.",
+        "3_10": "If the data subject does not wish their data to be used for secondary purposes, they may express this by following the procedure indicated in the ARCO Rights section and options to limit the use of their data."
+      },
+      "4": {
+        "title": "Legal Basis and Consent",
+        "4_1": "The processing of personal data is carried out in accordance with applicable Mexican legislation on the protection of personal data held by private parties.",
+        "4_2": "When the data subject provides their personal data through the website, forms, email, or any other enabled means, it is understood that they grant their consent for the processing of such data in accordance with this Privacy Notice, except in cases where the law allows another legal basis."
+      },
+      "5": {
+        "title": "Transfers of Personal Data",
+        "5_1": "The Controller may share the data subject's personal data with third parties only in the following cases:",
+        "5_2": "Technology service providers, hosting, analysis tools, and platforms necessary for the operation of the website and the provision of contracted services.",
+        "5_3": "Payment processing service providers (authorized payment aggregators) involved in completing transactions made through the site.",
+        "5_4": "Professional advisors, such as legal, accounting, or tax advisors, when strictly necessary for compliance with legal or contractual obligations.",
+        "5_5": "These third parties will process personal data only in accordance with the Controller's instructions and applicable law, without using it for purposes other than those stated herein.",
+        "5_6": "The Controller does not sell or commercialize the personal data of data subjects."
+      },
+      "6": {
+        "title": "Security Measures",
+        "6_1": "The Controller has implemented reasonable administrative, technical, and physical security measures to protect personal data against damage, loss, alteration, destruction, or unauthorized use, access, or processing.",
+        "6_2": "Although the Controller applies reasonable security standards, the data subject acknowledges that no system is completely invulnerable; however, the Controller makes constant efforts to maintain an adequate level of protection."
+      },
+      "7": {
+        "title": "Use of Cookies and Similar Technologies",
+        "7_1": "The Controller's website may use cookies, pixel tags, and similar technologies to collect information about user activity.",
+        "7_2": "These technologies are used to: improve the site usage experience, obtain traffic and performance statistics, and personalize certain content or remember basic preferences.",
+        "7_3": "The data subject can configure their browser to block or delete cookies; however, some site functions may be limited if cookies are disabled."
+      },
+      "8": {
+        "title": "ARCO Rights",
+        "8_1": "The data subject has the right to request at any time Access, Rectification, Cancellation, or Opposition regarding their personal data (ARCO rights), as well as other rights recognized by applicable law.",
+        "8_2": "To exercise these rights, the data subject may send a request to informes@dsynk.com.mx indicating at least the following:",
+        "8_3": "Full name of the data subject and contact method to receive the response.",
+        "8_4": "Copy of a document proving their identity or, where applicable, the corresponding legal representation.",
+        "8_5": "Clear and precise description of the personal data for which they wish to exercise any ARCO right.",
+        "8_6": "Any additional element or document that facilitates the location of the personal data.",
+        "8_7": "The Controller will respond to the request within the time periods established by applicable law, indicating whether it is appropriate and, where applicable, how the corresponding right will be made effective."
+      },
+      "9": {
+        "title": "Options to Limit the Use or Disclosure of Data",
+        "9_1": "The data subject may request at any time the limitation of the use or disclosure of their personal data for certain purposes, especially in relation to commercial or promotional communications.",
+        "9_2": "To do so, the data subject may use the unsubscribe mechanisms included in the messages themselves or send an email to informes@dsynk.com.mx indicating their wish to stop receiving such communications.",
+        "9_3": "The Controller will record, where applicable, the data subject's refusal regarding secondary purposes, reflecting this decision in the subsequent processing of the information."
+      },
+      "10": {
+        "title": "Data Retention",
+        "10_1": "Personal data will be retained for the time necessary to fulfill the purposes described in this Privacy Notice, as well as for additional periods required by applicable law or tax and contractual obligations.",
+        "10_2": "Once these purposes have been fulfilled and the retention periods have expired, the Controller will proceed to delete or anonymize personal data that is no longer necessary, in accordance with its internal policies."
+      },
+      "11": {
+        "title": "Modifications to the Privacy Notice",
+        "11_1": "The Controller may modify or update the content of this Privacy Notice at any time.",
+        "11_2": "Modifications will be made known to data subjects by publishing the updated version on the website dsynk.com.mx, indicating the date of the last update."
+      },
+      "12": {
+        "title": "Acceptance of the Privacy Notice",
+        "12_1": "By using the website, providing personal data through forms, email, or other enabled means, or contracting the Controller's services, the data subject acknowledges that they have read and understood this Privacy Notice.",
+        "12_2": "The data subject grants their consent for the processing of their personal data in accordance with the purposes and conditions set forth herein, unless they exercise their rights to limit or revoke such consent under the terms of applicable law."
+      }
+    }
+  },
+  "refund": {
+    "title": "Cancellation and Refund Policy",
+    "company": "JUSTO CREATIVO, S.A. DE C.V.",
+    "last_update": "Last modified: July 2026",
+    "sections": {
+      "1": {
+        "title": "Identity and Scope of Application",
+        "1_1": "This Cancellation and Refund Policy (the \"Policy\") is part of the Terms and Conditions applicable to the consulting, auditing, and SEO optimization services for e-commerce (the \"Services\") offered by JUSTO CREATIVO, S.A. DE C.V. (the \"Provider\").",
+        "1_2": "This Policy applies to contracts made through the website dsynk.com.mx and those formalized by electronic means with reference to this Policy.",
+        "1_3": "By contracting the Services, the client (the \"Client\") declares to know and accept the provisions herein, without prejudice to the rights that correspond to them under applicable Mexican consumer protection legislation."
+      },
+      "2": {
+        "title": "Nature of Services and Scope",
+        "2_1": "The Provider's Services consist mainly of consulting, analysis, diagnostics, content generation, and customized SEO adjustments for online stores, delivered in digital format and/or implemented remotely.",
+        "2_2": "Many of the Services involve customized work, strategic planning, and progressive execution, so the possibility of cancellation or refund varies according to the degree of project progress and the date on which the cancellation is requested.",
+        "2_3": "Any additional specific conditions regarding cancellations or refunds included in a commercial proposal or particular agreement shall prevail over the provisions herein to the extent more favorable to the Client."
+      },
+      "3": {
+        "title": "Cancellation Before Service Begins",
+        "3_1": "It shall be understood that the Service has not started when, within the first 3 business days after payment confirmation, the Provider has not yet begun analysis, diagnostic, planning, or execution activities associated with the Client's project.",
+        "3_2": "The Client may request total cancellation of the Service within the first 3 business days after payment confirmation, provided the Service has not started.",
+        "3_3": "The request must be sent to informes@dsynk.com.mx, indicating the Client's name, contact details, and contract reference (order or project number).",
+        "3_4": "If it is confirmed that the Service has not started, the Provider will refund 100% of the amount paid within a maximum period of 10 business days from the acceptance of the cancellation."
+      },
+      "4": {
+        "title": "Cancellation with Service in Progress",
+        "4_1": "The Service shall be considered in progress when the Provider has begun any analysis, diagnostic, planning, content generation, SEO adjustment implementation, or deliverable preparation activities for the Client.",
+        "4_2": "The Client may request cancellation of the service in progress within the first 15 calendar days after payment confirmation.",
+        "4_3": "The request must be sent to informes@dsynk.com.mx, indicating name, contact details, reference of the contracted service, and reason for cancellation.",
+        "4_4": "In case of cancellation with the service in progress, the following rules shall apply:",
+        "4_5": "If project progress is equal to or less than 50%, the Provider may retain up to 50% of the total amount paid and refund the remaining 50%.",
+        "4_6": "If project progress is greater than 50%, there is no refund.",
+        "4_7": "The Provider will notify the Client, within a maximum period of 7 business days from receipt of the request, of the project progress percentage and the refund amount that applies, if any."
+      },
+      "5": {
+        "title": "Completed Services and Digital Deliverables",
+        "5_1": "A Service shall be considered completed when the Provider has delivered all deliverables committed in the contracted plan or corresponding proposal.",
+        "5_2": "In the case of completed Services or digital deliverables already sent to the Client (for example, PDF reports, SEO texts, blog articles, content structures), cancellations or refunds shall not proceed.",
+        "5_3": "The foregoing, unless a mandatory legal provision provides a different right in favor of the Client, in which case the applicable regulations shall be followed."
+      },
+      "6": {
+        "title": "Right of Revocation in Online Purchases",
+        "6_1": "When the right to revoke consent in online purchases is applicable, the Client may exercise it within 5 business days following the date on which they received the contracting confirmation, in accordance with Mexican consumer protection legislation.",
+        "6_2": "To exercise this right, the Client must communicate their revocation to informes@dsynk.com.mx within the aforementioned period, providing the necessary data to identify the transaction.",
+        "6_3": "If the Service has already been fully or partially provided, the Provider may retain the amount corresponding to the effectively executed portion, applying project progress criteria similar to those described in section 4.4."
+      },
+      "7": {
+        "title": "Procedure for Requesting Cancellations and Refunds",
+        "7_1": "All cancellation or refund requests must be sent in writing to informes@dsynk.com.mx within the periods indicated in this Policy.",
+        "7_2": "The request must contain, at a minimum:",
+        "7_3": "Full name of the Client.",
+        "7_4": "Contact email and phone number.",
+        "7_5": "Reference of the contracted service (order number, plan or project name).",
+        "7_6": "Brief description of the reason for cancellation or refund request.",
+        "7_7": "The Provider will acknowledge receipt of the request within a maximum period of 3 business days and will communicate its resolution within a maximum period of 7 business days from the receipt of complete information."
+      },
+      "8": {
+        "title": "Method and Timeframe for Processing Refunds",
+        "8_1": "When a refund is applicable, it shall be made preferably through the same payment method used by the Client, through the authorized payment aggregator.",
+        "8_2": "The Provider will process the refund with the payment aggregator within a maximum period of 10 business days from the date on which the Client was notified of the refund approval.",
+        "8_3": "The additional time it takes for the refund to appear on the Client's account statement will depend on the processes of the card-issuing institution, over which the Provider has no control."
+      },
+      "9": {
+        "title": "Claims and Clarifications",
+        "9_1": "In case of disagreement related to a cancellation, refund, or the application of this Policy, the Client may submit a claim to informes@dsynk.com.mx within 15 calendar days following the notification of the resolution.",
+        "9_2": "The Provider will review the claim and issue a final response within a maximum period of 10 business days from its receipt.",
+        "9_3": "The foregoing is understood without prejudice to the Client's right to appear before the competent consumer protection authorities, including PROFECO, when deemed appropriate."
+      },
+      "10": {
+        "title": "Exceptions and Special Cases",
+        "10_1": "In long-term services, customized plans, or tailored projects (for example, complete strategies such as \"Orbit 360 Plan\"), particular cancellation and refund conditions may be agreed upon in writing that complement or adjust the periods and percentages established herein.",
+        "10_2": "Cancellations or refunds shall not proceed when fraud, misuse of the site or services, or serious breach of the Terms and Conditions by the Client is proven."
+      },
+      "11": {
+        "title": "Policy Updates",
+        "11_1": "The Provider may modify or update this Cancellation and Refund Policy at any time.",
+        "11_2": "The current version will be available on the website dsynk.com.mx, indicating the date of its last update.",
+        "11_3": "The contracting of new Services or continued use of the site after the publication of changes shall imply acceptance of the modified version of this Policy."
+      }
+    }
+  },
+   "terms": {
+    "title": "Terms and Conditions",
+    "company": "JUSTO CREATIVO, S.A. DE C.V.",
+    "last_update": "Last modified: July 2026",
+    "sections": {
+      "1": {
+        "title": "Provider Identity and Scope of Application",
+        "1_1": "These Terms and Conditions govern the access and use of the website and the contracting of consulting, auditing, and SEO optimization services for e-commerce (the \"Services\") offered by JUSTO CREATIVO, S.A. DE C.V. (hereinafter, the \"Provider\"), RFC JCR210416DL6, with address at Calle Monte Elbruz, No. 124, Piso 2, Int. 212 B, Colonia Lomas De Chapultepec III Sección, Alcaldía Miguel Hidalgo, C.P. 11000, Mexico City.",
+        "1_2": "For contact purposes, the Provider makes available the email address informes@dsynk.com.mx and phone: +52 1 55 4634 0310, as well as other customer service methods indicated on the site itself.",
+        "1_3": "The use of the site and the contracting of the Services imply full and unreserved acceptance of these Terms and Conditions by the user (the \"Client\").",
+        "1_4": "The different plans, packages, and customized solutions offered by the Provider are described on the website and/or in specific commercial proposals, and are understood to be incorporated into these Terms for all legal purposes."
+      },
+      "2": {
+        "title": "General Description of Services",
+        "2_1": "The Provider offers professional services related to the design, diagnosis, and SEO optimization of online stores, as well as the creation and adjustment of content aimed at boosting organic traffic and the commercial performance of the Client's e-commerce.",
+        "2_2": "The Services are structured in predefined plans and customized modalities, whose scopes, deliverables, and prices are detailed on the Provider's website or in the particular proposal sent to the Client.",
+        "2_3": "Unless otherwise agreed, the Services are provided remotely through electronic means, video calls, digital collaboration tools, and the exchange of files in digital format."
+      },
+      "3": {
+        "title": "Scope and Exclusions",
+        "3_1": "The specific scope of each contracted Service shall be defined in the description of the corresponding plan published on the website or in the commercial proposal accepted by the client.",
+        "3_2": "Any activity, deliverable, or implementation not expressly appearing in the description of the plan or accepted proposal shall be considered out of scope and, where applicable, may be quoted and contracted separately.",
+        "3_3": "The descriptions, examples, and informative texts on the site are for guidance purposes and seek to clearly explain the Services, without constituting a guarantee of specific results."
+      },
+      "4": {
+        "title": "Client Information and Collaboration",
+        "4_1": "The Client undertakes to provide truthful, complete, and updated information about their business, their online store, and the commercial objectives they seek to achieve through the Services.",
+        "4_2": "The Client must provide the accesses, permissions, materials, content, and any other inputs reasonably necessary for the Provider to execute audits, SEO adjustments, and content production.",
+        "4_3": "The Provider shall not be responsible for delays, missed deadlines, or variations in results arising from the Client's lack of collaboration, late delivery of information, or access restrictions."
+      },
+      "5": {
+        "title": "Prices, Taxes, and Billing",
+        "5_1": "The prices of the Services are published on the Provider's website or communicated in specific commercial proposals, expressed in Mexican pesos (MXN) and indicating, where applicable, whether or not they include VAT.",
+        "5_2": "The Provider may modify prices at any time; variations shall not affect contracts already confirmed and paid prior to the update.",
+        "5_3": "For invoice issuance, the Client must provide their correct and complete tax information within the period indicated by the Provider, being responsible for the accuracy of such information."
+      },
+      "6": {
+        "title": "Payment Methods and Contract Formalization",
+        "6_1": "Payment for the Services may only be made by credit and debit cards, through the authorized payment aggregator that the Provider has integrated into its website at the time of contracting.",
+        "6_2": "The contract shall be considered perfected when the payment has been correctly credited by said payment aggregator and the Client receives the corresponding confirmation by email or other electronic means.",
+        "6_3": "The start of the Services shall depend on both the payment confirmation and the delivery of the initial information that the Provider requires to plan and execute the project."
+      },
+      "7": {
+        "title": "Deliverables and Delivery Times",
+        "7_1": "Deliverables may include reports, diagnostic documents, recommendations, store configuration adjustments, content optimization, text creation, blog articles, or other materials related to SEO and content.",
+        "7_2": "Delivery times shall be detailed in the plan description, in the contracting process, or in the specific proposal, considering the complexity of the project and the availability of inputs from the Client.",
+        "7_3": "Deliverables shall be provided by electronic means, including email, project management tools, storage platforms, or other agreed means.",
+        "7_4": "The Client shall have a reasonable period, informed by the Provider, to review the deliverables and request adjustments within the contracted scope."
+      },
+      "8": {
+        "title": "Nature of Services and Absence of Results Guarantee",
+        "8_1": "The Services consist of consulting, analysis, implementation, and support in SEO and organic traffic strategies, aimed at improving the visibility and performance of the store in search engines.",
+        "8_2": "Results in terms of search engine positions, traffic, and sales depend on factors beyond the Provider's control, including algorithm changes, competitor actions, internal Client decisions, and market conditions.",
+        "8_3": "Therefore, the Provider does not guarantee specific positions, concrete traffic volumes, or determined sales levels, committing instead to act with professional diligence and in accordance with good e-commerce and SEO practices."
+      },
+      "9": {
+        "title": "Website Use",
+        "9_1": "The Client undertakes to use the site lawfully and in accordance with these Terms, refraining from carrying out activities that may violate third-party rights, site security, or the Provider's intellectual property.",
+        "9_2": "The following acts are prohibited, among others: using the site for illicit or fraudulent purposes; systematically copying or extracting content without authorization; introducing malicious code; or impersonating identities or credentials.",
+        "9_3": "The Provider may suspend, limit, or cancel access to the site or certain functionalities in case of detecting misuse or breach of these Terms."
+      },
+      "10": {
+        "title": "Intellectual Property",
+        "10_1": "The content of the site (texts, images, designs, logos, navigation structures, software, among others) is the property of the Provider or is used under license, and is protected by applicable intellectual property legislation.",
+        "10_2": "The deliverables generated for the Client may be used by the latter in their online store and digital channels in accordance with the contracted purpose, without this implying a waiver of moral copyright where applicable.",
+        "10_3": "The Client declares to have the necessary rights over brands, logos, images, texts, and other materials provided to the Provider for use within the Services, holding the latter harmless against third-party claims."
+      },
+      "11": {
+        "title": "Limitation of Liability",
+        "11_1": "To the extent permitted by Mexican law, the Provider shall not be liable for indirect, consequential damages, data loss, loss of opportunities, or lost profits arising from the use of the site or the Services.",
+        "11_2": "The maximum liability of the Provider to the Client, for any claim related to the Services, shall be limited to the amount actually paid by the Client for the service that gave rise to the claim.",
+        "11_3": "The Provider shall not be liable for failures in third-party services (hosting, e-commerce platforms, payment processors, external tools) or for changes in search engine policies or algorithms that impact the performance of the Client's site."
+      },
+      "12": {
+        "title": "Modifications, Cancellations, and Refunds",
+        "12_1": "The specific rules on scope modifications, cancellations, returns, and refunds are established in the Refund, Cancellation, and Return Policy available on the website, which forms part of these Terms.",
+        "12_2": "Any request for plan change, rescheduling, or major adjustment must be processed through the indicated contact channels and shall be subject to confirmation by the Provider.",
+        "12_3": "In matters not provided for in these Terms or in the corresponding policy, Mexican consumer protection legislation shall apply."
+      },
+      "13": {
+        "title": "Personal Data Protection",
+        "13_1": "The processing of the Client's personal data is governed by the Privacy Notice published on the Provider's website, which details the purposes of processing, possible transfers, and mechanisms for exercising ARCO rights.",
+        "13_2": "By using the site or contracting the Services, the Client acknowledges having read the Privacy Notice and grants their consent for the processing of their personal data in accordance with what is indicated therein."
+      },
+      "14": {
+        "title": "Communications and Contact",
+        "14_1": "For any clarification related to these Terms or the Services, the Client may communicate through the email informes@dsynk.com.mx and the contact methods indicated on the Provider's website.",
+        "14_2": "The Provider may send relevant notifications and communications to the email address that the Client has provided when registering or contracting the Services."
+      },
+      "15": {
+        "title": "Applicable Law and Jurisdiction",
+        "15_1": "These Terms and Conditions shall be interpreted in accordance with the laws in force in the United Mexican States.",
+        "15_2": "For the resolution of disputes arising from the interpretation or compliance with these Terms, the parties submit to the competent courts of Mexico City, waiving any other jurisdiction that may correspond to them."
+      },
+      "16": {
+        "title": "Terms Update",
+        "16_1": "The Provider may modify these Terms and Conditions at any time; the current version shall be available on the website dsynk.com.mx, indicating the date of last update.",
+        "16_2": "Continued use of the site or contracting of new Services after the publication of changes shall imply acceptance of the modified version of the Terms."
+      }
+    }
+  },
+  "map": {
+  "close": "Close",
+  "show_address": "Show address",
+  "company_name": "DSYNC"
+}
 }

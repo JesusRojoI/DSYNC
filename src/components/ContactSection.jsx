@@ -96,7 +96,7 @@ const ContactSection = () => {
   }
 
   const servicesList = [
-    { value: '', label: t('contact.services_list.select') },
+    //{ value: '', label: t('contact.services_list.select') },
     { value: 'seo', label: t('contact.services_list.seo') },
     { value: 'ecommerce', label: t('contact.services_list.ecommerce') },
     { value: 'web_design', label: t('contact.services_list.web_design') },

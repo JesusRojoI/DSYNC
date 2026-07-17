@@ -383,6 +383,283 @@
     "support_message": "Si tienes alguna pregunta sobre tu pedido, no dudes en contactarnos en",
     "back_to_home": "Volver al inicio",
     "contact_support": "Contactar soporte"
-  }
+  },
+  "privacy": {
+    "title": "Aviso de Privacidad",
+    "company": "JUSTO CREATIVO, S.A. DE C.V.",
+    "last_update": "Fecha de modificación: Julio 2026",
+    "sections": {
+      "1": {
+        "title": "Responsable del tratamiento",
+        "1_1": "JUSTO CREATIVO, S.A. DE C.V. (en lo sucesivo, el \"Responsable\"), RFC JCR210416DL6 y domicilio en Calle Monte Elbruz, N°. 124, Piso 2, Int 212 B, Colonia Lomas De Chapultepec III Sección, Alcaldía Miguel Hidalgo, C.P. 11000, Ciudad De México, es responsable del tratamiento de los datos personales recabados a través de su sitio web y de los medios de contacto que pone a disposición de sus clientes y usuarios.",
+        "1_2": "Para cualquier asunto relacionado con la protección de datos personales, el Responsable pone a disposición el correo electrónico informes@dsynk.com.mx y el sitio web dsynk.com.mx, así como los demás medios de contacto que se indiquen en el propio sitio."
+      },
+      "2": {
+        "title": "Datos personales que se recaban",
+        "2_1": "El Responsable puede recabar datos personales de forma directa (cuando el titular los proporciona) o indirecta (a través de otras fuentes permitidas por la ley), incluyendo de manera enunciativa más no limitativa:",
+        "2_2": "Datos de identificación: nombre, apellidos, país o ciudad de residencia.",
+        "2_3": "Datos de contacto: correo electrónico, número de teléfono, perfiles de contacto digitales.",
+        "2_4": "Datos relacionados con la actividad comercial: nombre de la tienda en línea, giro de negocio, dirección del sitio web del comercio, así como información general necesaria para la prestación de servicios de consultoría y SEO.",
+        "2_5": "Datos de facturación: denominación o razón social, RFC, domicilio fiscal y demás datos requeridos para la emisión de comprobantes fiscales.",
+        "2_6": "Datos de uso del sitio: información sobre navegación, páginas visitadas, tiempo de permanencia y referencias de origen, obtenidos mediante cookies y tecnologías similares.",
+        "2_7": "El Responsable no solicita de manera intencional datos personales sensibles; en caso de que el titular decida proporcionarlos, se entenderá que lo hace bajo su responsabilidad y con el consentimiento correspondiente."
+      },
+      "3": {
+        "title": "Finalidades del tratamiento",
+        "3_1": "Los datos personales del titular serán utilizados para las siguientes finalidades primarias, necesarias para la relación jurídica con el Responsable:",
+        "3_2": "Gestionar la creación y administración de registros o cuentas de usuario en el sitio web.",
+        "3_3": "Atender solicitudes de información, dudas, comentarios o cotizaciones sobre los servicios de consultoría, auditoría y optimización SEO para e‑commerce.",
+        "3_4": "Procesar solicitudes de contratación, pagos y facturación de los servicios ofrecidos.",
+        "3_5": "Proporcionar soporte y atención al cliente, así como dar seguimiento a proyectos en curso.",
+        "3_6": "Elaborar diagnósticos, análisis y estrategias de SEO que requieran información básica sobre la tienda en línea y el negocio del titular.",
+        "3_7": "Adicionalmente, los datos podrán emplearse para las siguientes finalidades secundarias:",
+        "3_8": "Envío de comunicaciones comerciales, boletines, contenidos educativos, invitaciones a eventos virtuales o presenciales y mensajes relacionados con los servicios y actividades del Responsable.",
+        "3_9": "Realización de encuestas de satisfacción, estudios internos de mercado y análisis estadísticos para mejorar los servicios y la experiencia de los usuarios.",
+        "3_10": "En caso de que el titular no desee que sus datos se utilicen para finalidades secundarias, podrá manifestarlo siguiendo el procedimiento indicado en la sección de Derechos ARCO y opciones para limitar el uso de sus datos."
+      },
+      "4": {
+        "title": "Fundamento y consentimiento",
+        "4_1": "El tratamiento de los datos personales se lleva a cabo conforme a la legislación mexicana aplicable en materia de protección de datos personales en posesión de particulares.",
+        "4_2": "Cuando el titular proporciona sus datos personales a través del sitio web, formularios, correo electrónico o cualquier otro medio habilitado, se entiende que otorga su consentimiento para el tratamiento de dichos datos conforme a este Aviso de Privacidad, salvo en los casos en que la ley permita otro fundamento."
+      },
+      "5": {
+        "title": "Transferencias de datos personales",
+        "5_1": "El Responsable podrá compartir los datos personales del titular con terceros únicamente en los siguientes supuestos:",
+        "5_2": "Proveedores de servicios tecnológicos, de hosting, herramientas de análisis y plataformas necesarias para la operación del sitio web y la prestación de los servicios contratados.",
+        "5_3": "Proveedores de servicios de procesamiento de pagos (agregadores de pago autorizados) que intervienen para concretar las transacciones realizadas a través del sitio.",
+        "5_4": "Asesores profesionales, tales como asesores legales, contables o fiscales, cuando sea estrictamente necesario para el cumplimiento de obligaciones legales o contractuales.",
+        "5_5": "Estos terceros tratarán los datos personales únicamente conforme a las instrucciones del Responsable y a la legislación aplicable, sin utilizarlos para fines distintos a los aquí señalados.",
+        "5_6": "El Responsable no vende ni comercializa los datos personales de los titulares."
+      },
+      "6": {
+        "title": "Medidas de seguridad",
+        "6_1": "El Responsable ha implementado medidas de seguridad administrativas, técnicas y físicas razonables para proteger los datos personales contra daño, pérdida, alteración, destrucción o uso, acceso o tratamiento no autorizado.",
+        "6_2": "Aunque el Responsable aplica estándares razonables de seguridad, el titular reconoce que ningún sistema es completamente invulnerable; no obstante, el Responsable realiza esfuerzos constantes para mantener un nivel adecuado de protección."
+      },
+      "7": {
+        "title": "Uso de cookies y tecnologías similares",
+        "7_1": "El sitio web del Responsable puede emplear cookies, etiquetas de píxel y tecnologías similares para recabar información sobre la actividad del usuario.",
+        "7_2": "Estas tecnologías se utilizan para: mejorar la experiencia de uso del sitio, obtener estadísticas de tráfico y rendimiento y personalizar ciertos contenidos o recordar preferencias básicas.",
+        "7_3": "El titular puede configurar su navegador para bloquear o eliminar cookies; sin embargo, algunas funciones del sitio podrían verse limitadas si las cookies están deshabilitadas."
+      },
+      "8": {
+        "title": "Derechos ARCO",
+        "8_1": "El titular de los datos personales tiene derecho a solicitar en cualquier momento el Acceso, Rectificación, Cancelación u Oposición respecto de sus datos personales (derechos ARCO), así como otros derechos reconocidos por la legislación aplicable.",
+        "8_2": "Para ejercer estos derechos, el titular podrá enviar una solicitud al correo electrónico informes@dsynk.com.mx indicando al menos lo siguiente:",
+        "8_3": "Nombre completo del titular y medio de contacto para recibir la respuesta.",
+        "8_4": "Copia de un documento que acredite su identidad o, en su caso, la representación legal correspondiente.",
+        "8_5": "Descripción clara y precisa de los datos personales respecto de los cuales desea ejercer algún derecho ARCO.",
+        "8_6": "Cualquier elemento o documento adicional que facilite la localización de los datos personales.",
+        "8_7": "El Responsable responderá la solicitud dentro de los plazos establecidos en la legislación aplicable, indicando si la misma resulta procedente y, en su caso, la forma en que se hará efectivo el derecho correspondiente."
+      },
+      "9": {
+        "title": "Opciones para limitar el uso o divulgación de datos",
+        "9_1": "El titular podrá solicitar en cualquier momento la limitación del uso o divulgación de sus datos personales para determinadas finalidades, especialmente en relación con comunicaciones comerciales o promocionales.",
+        "9_2": "Para ello, el titular podrá utilizar los mecanismos de baja incluidos en los propios mensajes o enviar un correo a informes@dsynk.com.mx indicando su deseo de dejar de recibir este tipo de comunicaciones.",
+        "9_3": "El Responsable registrará, en su caso, la negativa del titular respecto de las finalidades secundarias, reflejando dicha decisión en el tratamiento posterior de la información."
+      },
+      "10": {
+        "title": "Conservación de los datos",
+        "10_1": "Los datos personales serán conservados durante el tiempo necesario para cumplir con las finalidades descritas en este Aviso de Privacidad, así como por los plazos adicionales que resulten exigibles conforme a la legislación aplicable o a obligaciones fiscales y contractuales.",
+        "10_2": "Una vez cumplidas dichas finalidades y vencidos los plazos de conservación, el Responsable procederá a la supresión o anonimización de los datos personales que ya no sean necesarios, conforme a sus políticas internas."
+      },
+      "11": {
+        "title": "Modificaciones al Aviso de Privacidad",
+        "11_1": "El Responsable podrá modificar o actualizar en cualquier momento el contenido de este Aviso de Privacidad.",
+        "11_2": "Las modificaciones se harán del conocimiento de los titulares mediante la publicación de la versión actualizada en el sitio web dsynk.com.mx, indicando la fecha de la última actualización."
+      },
+      "12": {
+        "title": "Aceptación del Aviso de Privacidad",
+        "12_1": "Al utilizar el sitio web, proporcionar datos personales a través de formularios, correo electrónico u otros medios habilitados, o contratar los servicios del Responsable, el titular manifiesta que ha leído y comprendido este Aviso de Privacidad.",
+        "12_2": "El titular otorga su consentimiento para el tratamiento de sus datos personales conforme a las finalidades y condiciones aquí establecidas, salvo que ejerza sus derechos para limitar o revocar dicho consentimiento en los términos de la legislación aplicable."
+      }
+    }
+  },
+  "refund": {
+    "title": "Política de Reembolsos y Cancelaciones",
+    "company": "JUSTO CREATIVO, S.A. DE C.V.",
+    "last_update": "Fecha de modificación: Julio 2026",
+    "sections": {
+      "1": {
+        "title": "Identidad y ámbito de aplicación",
+        "1_1": "La presente Política de Cancelaciones y Reembolsos (la \"Política\") forma parte de los Términos y Condiciones aplicables a los servicios de consultoría, auditoría y optimización SEO para e‑commerce (los \"Servicios\") ofrecidos por JUSTO CREATIVO, S.A. DE C.V. (el \"Proveedor\").",
+        "1_2": "Esta Política aplica a las contrataciones realizadas a través del sitio web dsynk.com.mx y a aquellas que se formalicen por medios electrónicos con referencia a esta Política.",
+        "1_3": "Al contratar los Servicios, el cliente (el \"Cliente\") declara conocer y aceptar lo aquí previsto, sin perjuicio de los derechos que le correspondan conforme a la legislación mexicana aplicable en materia de protección al consumidor."
+      },
+      "2": {
+        "title": "Naturaleza de los servicios y alcances",
+        "2_1": "Los Servicios del Proveedor consisten principalmente en consultoría, análisis, diagnósticos, generación de contenidos y ajustes SEO personalizados para tiendas en línea, entregados en formato digital y/o implementados de forma remota.",
+        "2_2": "Muchos de los Servicios implican trabajo a la medida, planeación estratégica y ejecución progresiva, por lo que la posibilidad de cancelación o reembolso varía según el grado de avance del proyecto y la fecha en que se solicite la cancelación.",
+        "2_3": "Cualquier condición específica adicional relativa a cancelaciones o reembolsos que se incluya en una propuesta comercial o acuerdo particular prevalecerá sobre lo aquí previsto en aquello que resulte más favorable para el Cliente."
+      },
+      "3": {
+        "title": "Cancelación antes de iniciar el servicio",
+        "3_1": "Se entenderá que el Servicio no ha iniciado cuando, dentro de los primeros 3 días hábiles posteriores a la confirmación de pago, el Proveedor aún no ha comenzado actividades de análisis, diagnóstico, planeación o ejecución asociadas al proyecto del Cliente.",
+        "3_2": "El Cliente podrá solicitar la cancelación total del Servicio dentro de los primeros 3 días hábiles posteriores a la confirmación de pago, siempre que el Servicio no haya iniciado.",
+        "3_3": "La solicitud deberá enviarse al correo informes@dsynk.com.mx, indicando nombre del Cliente, datos de contacto y referencia de la contratación (número de pedido o proyecto).",
+        "3_4": "Si se confirma que el Servicio no ha iniciado, el Proveedor realizará un reembolso del 100% del monto pagado dentro de un plazo máximo de 10 días hábiles contados a partir de la aceptación de la cancelación."
+      },
+      "4": {
+        "title": "Cancelación con el servicio en curso",
+        "4_1": "Se considerará que el Servicio está en curso cuando el Proveedor haya comenzado cualquier actividad de análisis, diagnóstico, planeación, generación de contenidos, implementación de ajustes SEO o preparación de entregables para el Cliente.",
+        "4_2": "El Cliente podrá solicitar la cancelación del servicio en curso dentro de los primeros 15 días naturales posteriores a la confirmación de pago.",
+        "4_3": "La solicitud deberá enviarse al correo informes@dsynk.com.mx, indicando nombre, datos de contacto, referencia del servicio contratado y motivo de la cancelación.",
+        "4_4": "En caso de cancelación con el servicio en curso, aplicarán las siguientes reglas:",
+        "4_5": "Si el avance del proyecto es igual o menor al 50%, el Proveedor podrá retener hasta el 50% del monto total pagado y reembolsar el 50% restante.",
+        "4_6": "Si el avance del proyecto es mayor al 50%, no hay reembolso.",
+        "4_7": "El Proveedor notificará al Cliente, en un plazo máximo de 7 días hábiles contados desde la recepción de la solicitud, el porcentaje de avance del proyecto y el monto de reembolso que corresponda, en su caso."
+      },
+      "5": {
+        "title": "Servicios concluidos y entregables digitales",
+        "5_1": "Se considerará que un Servicio está concluido cuando el Proveedor haya entregado todos los entregables comprometidos en el plan contratado o en la propuesta correspondiente.",
+        "5_2": "En el caso de Servicios concluidos o entregables digitales ya enviados al Cliente (por ejemplo, reportes en PDF, textos SEO, artículos de blog, estructuras de contenido), no procederán cancelaciones ni reembolsos.",
+        "5_3": "Lo anterior, salvo que una disposición legal obligatoria prevea un derecho distinto a favor del Cliente, en cuyo caso se atenderá a lo marcado por la normativa aplicable."
+      },
+      "6": {
+        "title": "Derecho de revocación en compras en línea",
+        "6_1": "Cuando resulte aplicable el derecho de revocar el consentimiento en compras realizadas en línea, el Cliente podrá ejercerlo dentro de los 5 días hábiles siguientes a la fecha en que haya recibido la confirmación de contratación, conforme a la legislación mexicana de protección al consumidor.",
+        "6_2": "Para ejercer este derecho, el Cliente deberá comunicar su revocación al correo informes@dsynk.com.mx dentro del plazo antes indicado, proporcionando los datos necesarios para identificar la operación.",
+        "6_3": "Si el Servicio ya fue total o parcialmente prestado, el Proveedor podrá retener el monto correspondiente a la parte efectivamente ejecutada, aplicando criterios de avance del proyecto similares a los descritos en el apartado 4.4."
+      },
+      "7": {
+        "title": "Procedimiento para solicitar cancelaciones y reembolsos",
+        "7_1": "Toda solicitud de cancelación o reembolso deberá enviarse por escrito al correo informes@dsynk.com.mx dentro de los plazos señalados en esta Política.",
+        "7_2": "La solicitud deberá contener, como mínimo:",
+        "7_3": "Nombre completo del Cliente.",
+        "7_4": "Correo electrónico y teléfono de contacto.",
+        "7_5": "Referencia del servicio contratado (número de pedido, nombre del plan o proyecto).",
+        "7_6": "Descripción breve del motivo de la cancelación o solicitud de reembolso.",
+        "7_7": "El Proveedor acusará recibo de la solicitud dentro de un plazo máximo de 3 días hábiles y comunicará su resolución en un plazo máximo de 7 días hábiles contados a partir de la recepción completa de la información."
+      },
+      "8": {
+        "title": "Forma y plazo para efectuar reembolsos",
+        "8_1": "Cuando proceda un reembolso, éste se realizará preferentemente a través del mismo método de pago utilizado por el Cliente, por conducto del agregador de pagos autorizado.",
+        "8_2": "El Proveedor gestionará el reembolso ante el agregador de pagos dentro de un plazo máximo de 10 días hábiles contados desde la fecha en que se haya notificado al Cliente la procedencia del reembolso.",
+        "8_3": "El tiempo adicional que tarde en reflejarse el reembolso en el estado de cuenta del Cliente dependerá de los procesos de la institución emisora de la tarjeta, sobre los cuales el Proveedor no tiene control."
+      },
+      "9": {
+        "title": "Reclamaciones y aclaraciones",
+        "9_1": "En caso de inconformidad relacionada con una cancelación, reembolso o con la aplicación de esta Política, el Cliente podrá presentar una reclamación al correo informes@dsynk.com.mx dentro de los 15 días naturales siguientes a la notificación de la resolución.",
+        "9_2": "El Proveedor revisará la reclamación y emitirá una respuesta final en un plazo máximo de 10 días hábiles contados a partir de su recepción.",
+        "9_3": "Lo anterior se entiende sin perjuicio del derecho del Cliente de acudir ante las autoridades competentes de protección al consumidor, incluyendo la PROFECO, cuando así lo considere pertinente."
+      },
+      "10": {
+        "title": "Excepciones y casos especiales",
+        "10_1": "En servicios de larga duración, planes personalizados o proyectos a medida (por ejemplo, estrategias completas tipo \"Plan Órbita 360\"), podrán pactarse por escrito condiciones particulares de cancelación y reembolso que complementen o ajusten los plazos y porcentajes aquí establecidos.",
+        "10_2": "No procederán cancelaciones ni reembolsos cuando se acredite fraude, uso indebido del sitio o de los servicios, o incumplimiento grave de los Términos y Condiciones por parte del Cliente."
+      },
+      "11": {
+        "title": "Actualización de la Política",
+        "11_1": "El Proveedor podrá modificar o actualizar en cualquier momento la presente Política de Cancelaciones y Reembolsos.",
+        "11_2": "La versión vigente estará disponible en el sitio web dsynk.com.mx, indicando la fecha de su última actualización.",
+        "11_3": "La contratación de nuevos Servicios o el uso continuado del sitio después de la publicación de cambios implicará la aceptación de la versión modificada de esta Política."
+      }
+    }
+  },"terms": {
+    "title": "Términos y Condiciones",
+    "company": "JUSTO CREATIVO, S.A. DE C.V.",
+    "last_update": "Fecha de modificación: Julio 2026",
+    "sections": {
+      "1": {
+        "title": "Identidad del proveedor y ámbito de aplicación",
+        "1_1": "Estos Términos y Condiciones regulan el acceso y uso del sitio web y la contratación de servicios de consultoría, auditoría y optimización SEO para e‑commerce (los \"Servicios\") ofrecidos por JUSTO CREATIVO, S.A. DE C.V. (en lo sucesivo, el \"Proveedor\"), RFC JCR210416DL6 y domicilio en Calle Monte Elbruz, N°. 124, Piso 2, Int. 212 B, Colonia Lomas De Chapultepec III Sección, Alcaldía Miguel Hidalgo, C.P. 11000, Ciudad De México.",
+        "1_2": "Para efectos de contacto, el Proveedor pone a disposición el correo electrónico informes@dsynk.com.mx y teléfono: +52 1 55 4634 0310, así como los demás medios de atención que se indiquen en la propia página.",
+        "1_3": "El uso del sitio y la contratación de los Servicios implican la aceptación plena y sin reservas de estos Términos y Condiciones por parte del usuario (el \"Cliente\").",
+        "1_4": "Los distintos planes, paquetes y soluciones personalizadas que el Proveedor ofrece se describen en el sitio web y/o en propuestas comerciales específicas, y se entienden incorporados a estos Términos para todos los efectos legales."
+      },
+      "2": {
+        "title": "Descripción general de los servicios",
+        "2_1": "El Proveedor ofrece servicios profesionales relacionados con el diseño, diagnóstico y optimización SEO de tiendas en línea, así como la creación y ajuste de contenidos orientados a impulsar el tráfico orgánico y el desempeño comercial del e‑commerce del Cliente.",
+        "2_2": "Los Servicios se estructuran en planes predefinidos y en modalidades personalizadas, cuyos alcances, entregables y precios se detallan en la página web del Proveedor o en la propuesta particular enviada al Cliente.",
+        "2_3": "Salvo acuerdo distinto, los Servicios se prestan de forma remota a través de medios electrónicos, videollamadas, herramientas digitales de colaboración y el intercambio de archivos en formato digital."
+      },
+      "3": {
+        "title": "Alcances y exclusiones",
+        "3_1": "El alcance concreto de cada Servicio contratado se definirá en la descripción del plan correspondiente publicada en el sitio web o en la propuesta comercial aceptada por el cliente.",
+        "3_2": "Cualquier actividad, entregable o implementación que no aparezca expresamente en la descripción del plan o propuesta aceptada se considerará fuera de alcance y, en su caso, podrá cotizarse y contratarse por separado.",
+        "3_3": "Las descripciones, ejemplos y textos informativos del sitio tienen carácter orientativo y buscan explicar de forma clara los Servicios, sin que constituyan una garantía de resultados específicos."
+      },
+      "4": {
+        "title": "Información del Cliente y colaboración",
+        "4_1": "El Cliente se obliga a proporcionar información veraz, completa y actualizada sobre su negocio, su tienda en línea y los objetivos comerciales que busca alcanzar mediante los Servicios.",
+        "4_2": "El Cliente deberá facilitar los accesos, permisos, materiales, contenidos y cualquier otro insumo razonablemente necesario para que el Proveedor pueda ejecutar auditorías, ajustes SEO y producción de contenido.",
+        "4_3": "El Proveedor no será responsable por retrasos, incumplimientos de plazos ni variaciones en resultados derivadas de la falta de colaboración del Cliente, entrega tardía de información o restricciones de acceso."
+      },
+      "5": {
+        "title": "Precios, impuestos y facturación",
+        "5_1": "Los precios de los Servicios se publican en el sitio web del Proveedor o se comunican en propuestas comerciales específicas, expresados en pesos mexicanos (MXN) e indicando, en su caso, si incluyen o no el IVA.",
+        "5_2": "El Proveedor podrá modificar los precios en cualquier momento; las variaciones no afectarán contrataciones ya confirmadas y pagadas con anterioridad a la actualización.",
+        "5_3": "Para la emisión de factura, el Cliente deberá proporcionar sus datos fiscales correctos y completos dentro del plazo señalado por el Proveedor, siendo responsable de la veracidad de dicha información."
+      },
+      "6": {
+        "title": "Formas de pago y formalización de la contratación",
+        "6_1": "La contraprestación por los Servicios únicamente podrá pagarse mediante tarjetas de crédito y débito, a través del agregador de pagos autorizado que el Proveedor tenga integrado en su sitio web al momento de la contratación.",
+        "6_2": "La contratación se considerará perfeccionada cuando el pago haya sido acreditado de manera correcta por dicho agregador de pagos y el Cliente reciba la confirmación correspondiente por correo electrónico u otro medio electrónico.",
+        "6_3": "El inicio de los Servicios dependerá tanto de la confirmación del pago como de la entrega de la información inicial que el Proveedor requiera para planear y ejecutar el proyecto."
+      },
+      "7": {
+        "title": "Entregables y tiempos de entrega",
+        "7_1": "Los entregables podrán incluir reportes, documentos de diagnóstico, recomendaciones, ajustes en la configuración de la tienda, optimización de contenidos, creación de textos, artículos de blog u otros materiales vinculados con SEO y contenido.",
+        "7_2": "Los plazos de entrega se detallarán en la descripción del plan, en el proceso de contratación o en la propuesta específica, considerando la complejidad del proyecto y la disponibilidad de insumos por parte del Cliente.",
+        "7_3": "Los entregables se proporcionarán por medios electrónicos, incluyendo correo, herramientas de gestión de proyectos, plataformas de almacenamiento u otros medios acordados.",
+        "7_4": "El Cliente contará con un periodo razonable, informado por el Proveedor, para revisar los entregables y solicitar ajustes dentro del alcance contratado."
+      },
+      "8": {
+        "title": "Naturaleza de los servicios y ausencia de garantía de resultados",
+        "8_1": "Los Servicios consisten en labores de consultoría, análisis, implementación y acompañamiento en SEO y estrategias de tráfico orgánico, orientadas a mejorar la visibilidad y el desempeño de la tienda en motores de búsqueda.",
+        "8_2": "Los resultados en términos de posiciones en buscadores, tráfico y ventas dependen de factores externos al control del Proveedor, incluyendo cambios de algoritmos, acciones de la competencia, decisiones internas del Cliente y condiciones del mercado.",
+        "8_3": "Por lo anterior, el Proveedor no garantiza posiciones específicas, volúmenes concretos de tráfico ni niveles determinados de ventas, comprometiéndose en cambio a actuar con diligencia profesional y conforme a buenas prácticas de comercio electrónico y SEO."
+      },
+      "9": {
+        "title": "Uso del sitio web",
+        "9_1": "El Cliente se compromete a utilizar el sitio de forma lícita y conforme a estos Términos, absteniéndose de realizar actividades que puedan vulnerar derechos de terceros, la seguridad del sitio o la propiedad intelectual del Proveedor.",
+        "9_2": "Se prohíbe, entre otros actos: utilizar el sitio para fines ilícitos o fraudulentos; copiar o extraer sistemáticamente contenido sin autorización; introducir código malicioso; o suplantar identidades o credenciales.",
+        "9_3": "El Proveedor podrá suspender, limitar o cancelar el acceso al sitio o a determinadas funcionalidades en caso de detectar uso indebido o incumplimiento de estos Términos."
+      },
+      "10": {
+        "title": "Propiedad intelectual",
+        "10_1": "El contenido del sitio (textos, imágenes, diseños, logotipos, estructuras de navegación, software, entre otros) es propiedad del Proveedor o se utiliza bajo licencia, y está protegido por la legislación aplicable en materia de propiedad intelectual.",
+        "10_2": "Los entregables generados para el Cliente podrán utilizarse por éste en su tienda en línea y canales digitales conforme al propósito contratado, sin que ello implique renuncia a derechos morales de autor cuando corresponda.",
+        "10_3": "El Cliente declara contar con los derechos necesarios sobre marcas, logotipos, imágenes, textos y demás materiales que proporcione al Proveedor para su uso dentro de los Servicios, manteniendo a éste en paz y a salvo frente a reclamaciones de terceros."
+      },
+      "11": {
+        "title": "Limitación de responsabilidad",
+        "11_1": "En la medida permitida por la legislación mexicana, el Proveedor no será responsable por daños indirectos, consecuenciales, pérdida de datos, pérdida de oportunidades o lucro cesante derivados del uso del sitio o de los Servicios.",
+        "11_2": "La responsabilidad máxima del Proveedor frente al Cliente, por cualquier reclamación relacionada con los Servicios, se limitará al monto efectivamente pagado por el Cliente por el servicio que haya originado la reclamación.",
+        "11_3": "El Proveedor no será responsable por fallas en servicios de terceros (hosting, plataformas de e‑commerce, procesadores de pago, herramientas externas) ni por cambios en políticas o algoritmos de motores de búsqueda que impacten el desempeño del sitio del Cliente."
+      },
+      "12": {
+        "title": "Modificaciones, cancelaciones y reembolsos",
+        "12_1": "Las reglas específicas sobre modificaciones de alcance, cancelaciones, devoluciones y reembolsos se establecen en la Política de Reembolsos, Cancelaciones y Devoluciones disponible en el sitio web, la cual forma parte de estos Términos.",
+        "12_2": "Cualquier solicitud de cambio de plan, reprogramación o ajuste mayor deberá gestionarse por los canales de contacto indicados y estará sujeta a confirmación por parte del Proveedor.",
+        "12_3": "En lo no previsto en estos Términos ni en la política correspondiente, se aplicará la legislación mexicana en materia de protección al consumidor."
+      },
+      "13": {
+        "title": "Protección de datos personales",
+        "13_1": "El tratamiento de los datos personales del Cliente se rige por el Aviso de Privacidad publicado en el sitio web del Proveedor, en el que se detallan las finalidades del tratamiento, las posibles transferencias y los mecanismos para ejercer los derechos ARCO.",
+        "13_2": "Al utilizar el sitio o contratar los Servicios, el Cliente reconoce que ha leído el Aviso de Privacidad y otorga su consentimiento para el tratamiento de sus datos personales conforme a lo ahí indicado."
+      },
+      "14": {
+        "title": "Comunicaciones y contacto",
+        "14_1": "Para cualquier aclaración relacionada con estos Términos o con los Servicios, el Cliente podrá comunicarse a través del correo informes@dsynk.com.mx y de los medios de contacto señalados en el sitio web del Proveedor.",
+        "14_2": "El Proveedor podrá enviar notificaciones y comunicaciones relevantes al correo electrónico que el Cliente haya proporcionado al registrarse o al contratar los Servicios."
+      },
+      "15": {
+        "title": "Ley aplicable y jurisdicción",
+        "15_1": "Estos Términos y Condiciones se interpretarán conforme a las leyes vigentes en los Estados Unidos Mexicanos.",
+        "15_2": "Para la resolución de controversias derivadas de la interpretación o cumplimiento de estos Términos, las partes se someten a los tribunales competentes de la Ciudad de México, renunciando a cualquier otro fuero que pudiera corresponderles."
+      },
+      "16": {
+        "title": "Actualización de los Términos",
+        "16_1": "El Proveedor podrá modificar estos Términos y Condiciones en cualquier momento; la versión vigente estará disponible en el sitio web dsynk.com.mx, indicando la fecha de última actualización.",
+        "16_2": "El uso continuado del sitio o la contratación de nuevos Servicios después de la publicación de cambios implicará la aceptación de la versión modificada de los Términos."
+      }
+    }
+  },
+  "map": {
+  "close": "Cerrar",
+  "show_address": "Mostrar dirección",
+  "company_name": "DSYNC"
+}
   
 }

@@ -10,7 +10,7 @@ const HeroSection = () => {
     <section className="min-h-screen flex items-center bg-gradient-to-br from-gray-50 to-white pt-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-          {/* Texto */}
+          {/* Texto - 60% en desktop */}
           <motion.div
             initial={{ opacity: 0, x: -50 }}
             animate={{ opacity: 1, x: 0 }}
@@ -18,8 +18,14 @@ const HeroSection = () => {
             className="lg:col-span-1"
           >
             <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold text-gray-900 leading-tight mb-6">
-              {t('hero.title')}
-            </h1>
+  {t('hero.title').split('e-commerce').map((part, i, arr) => 
+    i < arr.length - 1 ? (
+      <React.Fragment key={i}>
+        {part}<span className="whitespace-nowrap">e-commerce</span>
+      </React.Fragment>
+    ) : part
+  )}
+</h1>
             <p className="text-xl text-gray-600 mb-8 leading-relaxed">
               {t('hero.subtitle')}
             </p>
@@ -36,7 +42,7 @@ const HeroSection = () => {
             </motion.a>
           </motion.div>
 
-          {/* Objeto Tecnológico */}
+          {/* Objeto Tecnológico Animado - 40% en desktop */}
           <motion.div
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
@@ -44,6 +50,7 @@ const HeroSection = () => {
             className="lg:col-span-1 flex justify-center items-center"
           >
             <div className="relative w-full max-w-md">
+              {/* Círculo animado de fondo */}
               <motion.div
                 className="absolute inset-0 bg-gradient-to-r from-gray-200 to-gray-300 rounded-full opacity-50"
                 animate={{
@@ -57,6 +64,7 @@ const HeroSection = () => {
                 }}
               />
               
+              {/* Nodo central */}
               <motion.div
                 className="relative bg-white rounded-3xl shadow-2xl p-8 border border-gray-200"
                 animate={{
