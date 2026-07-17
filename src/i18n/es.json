@@ -12,16 +12,16 @@
     "secure_payment": "Pago 100% Seguro"
   },
   "hero": {
-    "title": "Despega tu e-commerce con tráfico orgánico que sí vende",
-    "subtitle": "Atrae clientes reales desde Google y convierte tu tienda en un canal de ventas constante sin depender de la publicidad.",
-    "cta": "Quiero crecer mi tienda"
+  "title": "Haz desplegar tu e-commerce con un tráfico real que se traduce en ventas",
+    "subtitle": "Atrae una avalancha de clientes reales desde Google. Convierte tu tienda en una máquina de ventas constante. Sin anuncios. Sin excusas.",
+    "cta": "Quiero crecer mi negocio"
   },
   "who_we_are": {
     "title": "Quiénes somos",
-    "description": "Somos un equipo enfocado en el crecimiento digital a través de estrategias orgánicas para e-commerce. Creemos en construir negocios sólidos, no soluciones temporales.",
-    "description2": "Nos especializamos en diseñar tiendas optimizadas desde su base, integrando SEO, estructura y contenido para lograr visibilidad, posicionamiento y conversión. Nuestro enfoque es claro: resultados reales, medibles y escalables.",
+    "description": "Somos el equipo que acelera tu negocio digital. Usamos estrategias orgánicas agresivas para e-commerce. No prometemos magia: construimos imperios, no parches temporales.",
+    "description2": "Diseñamos tiendas optimizadas desde la raíz: SEO imparable, estructura sólida y contenido que arrasa. ¿Nuestro objetivo? Resultados reales, medibles y escalables. Sin rodeos.",
     "reason_title": "La Razón Detrás de Tu Éxito",
-    "reason_description": "No trabajamos con plantillas genéricas ni soluciones improvisadas. Cada proyecto se desarrolla con una estrategia clara enfocada en resultados.",
+    "reason_description": "Olvídate de plantillas genéricas y soluciones débiles. Cada proyecto es una máquina de resultados con una estrategia clara y letal.",
     "points": [
       "Experiencia en e-commerce y posicionamiento",
       "Estrategias diseñadas para generar ventas",
@@ -31,8 +31,7 @@
     ]
   },
   "vision": {
-    "title": "Creamos estructuras digitales que no solo se ven bien, sino que funcionan y venden."
-  },
+"title": "Diseñamos estructuras digitales que no solo se ven bien, sino que aplastan a la competencia y venden sin descanso."  },
   "plans": {
     "title": "Planes",
     "tab_start": "Planes Arranque",
@@ -44,11 +43,11 @@
   },
   "contact": {
     "sending": "Enviando...",
-    "wait_message": "Por favor espera un minuto antes de enviar otro mensaje.",
-    "error_sending": "Error al enviar el mensaje. Por favor intenta de nuevo.",
+    "wait_message": "Espera un minuto antes de enviar otro mensaje.",
+    "error_sending": "Error al enviar. Intenta de nuevo.",
     "title": "Contáctanos",
-    "subtitle": "Estamos listos para ayudarte a llevar tu e-commerce al siguiente nivel. Contáctanos y recibe una orientación clara sobre cómo hacer crecer tu negocio con tráfico orgánico.",
-    "form_title": "Escríbenos",
+    "subtitle": "Lleva tu e-commerce a la cima. Te orientamos sin rodeos para que crezcas con tráfico orgánico imparable."
+,    "form_title": "Escríbenos",
     "name": "Nombre y Apellido",
     "company": "Empresa",
     "phone": "Teléfono",
@@ -57,7 +56,7 @@
     "message": "Mensaje",
     "send": "Enviar",
     "success_title": "¡Mensaje enviado!",
-    "success_message": "Gracias por contactarnos. Te responderemos a la brevedad.",
+    "success_message": "Gracias. Te responderemos pronto.",
     "close": "Cerrar",
     "services_list": {
       "select": "Servicio requerido",
@@ -81,17 +80,16 @@
     "terms_conditions": "Términos y Condiciones",
     "refund_policy": "Política de Devoluciones y Reembolsos"
   },
-    "product": {
-        "features_title": "Características del plan",
-        "folio_number": "Número de folio",
-  "custom_total": "Total personalizado (precio unitario, antes de impuestos)",
-  "folio_placeholder": "Ingresa el número de folio",
-  "total_placeholder": "0.00",
-  "folio_required": "El número de folio es requerido",
-  "total_required": "El total es requerido",
-  "total_invalid": "El total debe ser mayor a $0.00",
-  "total_max_decimals": "Máximo 2 decimales permitidos",
-
+  "product": {
+    "features_title": "Características del plan",
+    "folio_number": "Número de folio",
+    "custom_total": "Total personalizado (precio unitario, antes de impuestos)",
+    "folio_placeholder": "Ingresa el número de folio",
+    "total_placeholder": "0.00",
+    "folio_required": "El número de folio es requerido",
+    "total_required": "El total es requerido",
+    "total_invalid": "El total debe ser mayor a $0.00",
+    "total_max_decimals": "Máximo 2 decimales permitidos",
     "breadcrumb_home": "Inicio",
     "quantity": "Cantidad",
     "category_label": "Categoría",
@@ -101,15 +99,15 @@
     "items": {
       "auditoria-seo-express": {
         "name": "Plan Auditoría SEO Express E-commerce",
-        "description": "Detecta rápidamente qué está frenando tus ventas orgánicas",
+        "description": "Detecta rápido lo que frena tus ventas orgánicas",
         "features": [
           "Revisión general de la tienda (home + 1 página)",
-          "1 lista de recomendaciones accionables (PDF)"
+          "Lista de recomendaciones accionables (PDF)"
         ]
       },
       "optimizacion-producto-individual": {
         "name": "Plan Optimización Producto Individual",
-        "description": "Convierte un producto en una página lista para vender en Google",
+        "description": "Convierte un producto en una página lista para Google",
         "features": [
           "Optimización de título y descripción",
           "Uso de 1 keyword principal",
@@ -118,7 +116,7 @@
       },
       "diagnostico-tienda-online": {
         "name": "Plan Diagnóstico Tienda Online",
-        "description": "Análisis completo de tu tienda para identificar áreas de mejora",
+        "description": "Analiza tu tienda para hallar áreas de mejora",
         "features": [
           "Análisis SEO general",
           "Revisión de estructura básica",
@@ -127,7 +125,7 @@
       },
       "keywords-iniciales": {
         "name": "Plan Keywords Iniciales",
-        "description": "Descubre qué buscan tus clientes en Google",
+        "description": "Descubre qué busca tu cliente en Google",
         "features": [
           "5 palabras clave",
           "Clasificación por intención de búsqueda",
@@ -136,7 +134,7 @@
       },
       "categoria-optimizada": {
         "name": "Plan Categoría Optimizada",
-        "description": "Mejora una categoría para atraer tráfico orgánico",
+        "description": "Mejora una categoría y atrae tráfico orgánico",
         "features": [
           "Optimización de 1 categoría",
           "Texto SEO (100–150 palabras)",
@@ -145,7 +143,7 @@
       },
       "mini-seo-setup": {
         "name": "Plan Mini SEO Setup",
-        "description": "Ajustes esenciales para que tu tienda empiece a posicionar",
+        "description": "Ajustes clave para empezar a posicionar tu tienda",
         "features": [
           "Configuración básica SEO",
           "Optimización de home"
@@ -162,7 +160,7 @@
       },
       "tienda-basica-seo": {
         "name": "Plan Tienda Básica SEO",
-        "description": "Inicia tu tienda con bases para posicionarte en Google",
+        "description": "Arranca tu tienda con bases para Google",
         "features": [
           "Estructura básica de tienda",
           "Hasta 5 productos cargados",
@@ -171,7 +169,7 @@
       },
       "seo-catalogo-inicial": {
         "name": "Plan SEO para Catálogo inicial",
-        "description": "Optimiza tu catálogo para empezar a atraer tráfico",
+        "description": "Optimiza tu catálogo y empieza a atraer tráfico",
         "features": [
           "Hasta 5 productos optimizados",
           "Keywords básicas",
@@ -180,7 +178,7 @@
       },
       "tienda-optimizada-starter": {
         "name": "Plan Tienda Optimizada Starter",
-        "description": "Tienda lista para vender con estructura SEO básica",
+        "description": "Tienda lista con estructura SEO básica",
         "features": [
           "Configuración de categorías",
           "SEO base"
@@ -188,7 +186,7 @@
       },
       "ecommerce-seo-inicial": {
         "name": "Plan E-commerce SEO Inicial",
-        "description": "Construye una tienda pensada para atraer clientes orgánicos",
+        "description": "Tienda diseñada para atraer clientes orgánicos",
         "features": [
           "Investigación básica de keywords",
           "Optimización de 5 productos",
@@ -197,7 +195,7 @@
       },
       "tienda-contenido-basico": {
         "name": "Plan Tienda con Contenido Básico",
-        "description": "Combina tienda + contenido para atraer tráfico",
+        "description": "Tienda + contenido para atraer tráfico",
         "features": [
           "Tienda básica optimizada",
           "1 artículo de blog SEO (150–300 palabras)",
@@ -206,7 +204,7 @@
       },
       "posicionamiento-inicial-ecommerce": {
         "name": "Plan Posicionamiento Inicial E-commerce",
-        "description": "Mejora tu visibilidad con optimización completa inicial",
+        "description": "Mejora tu visibilidad con optimización inicial completa",
         "features": [
           "SEO on-page completo",
           "Optimización de páginas clave",
@@ -224,7 +222,7 @@
       },
       "ecommerce-blog-seo": {
         "name": "Plan E-commerce con Blog SEO",
-        "description": "Atrae tráfico constante con contenido estratégico",
+        "description": "Contenido estratégico para tráfico constante",
         "features": [
           "Tienda optimizada (hasta 15 productos)",
           "3 artículos SEO (300–400 palabras)",
@@ -233,7 +231,7 @@
       },
       "tienda-organica-expandida": {
         "name": "Plan Tienda Orgánica Expandida",
-        "description": "Amplía tu catálogo con estructura optimizada para Google",
+        "description": "Catálogo ampliado con estructura para Google",
         "features": [
           "Hasta 25 productos",
           "SEO en productos y categorías",
@@ -242,7 +240,7 @@
       },
       "seo-contenido-estrategico": {
         "name": "Plan SEO + Contenido Estratégico",
-        "description": "Posiciona tu tienda con estrategia de contenido sólida",
+        "description": "Estrategia de contenido sólida para posicionar tu tienda",
         "features": [
           "Investigación de keywords",
           "5 artículos SEO (500 palabras)",
@@ -251,7 +249,7 @@
       },
       "ecommerce-seo-profesional": {
         "name": "Plan E-commerce SEO Profesional",
-        "description": "Lleva tu tienda a un nivel competitivo en Google",
+        "description": "Tienda competitiva en Google con SEO avanzado",
         "features": [
           "SEO técnico (indexación, velocidad básica)",
           "Arquitectura avanzada",
@@ -260,13 +258,13 @@
       },
       "plan-orbita-360": {
         "name": "Plan Órbita 360",
-        "description": "Una solución totalmente adaptada a tu negocio, diseñada para crear una estrategia de e-commerce y tráfico orgánico alineada a tus objetivos reales de crecimiento",
+        "description": "Solución a tu medida: estrategia de e-commerce y tráfico orgánico alineada a tus objetivos reales.",
         "features": [
           "Análisis personalizado de tu tienda y mercado",
           "Definición de estrategia SEO a medida",
-          "Selección de entregables según objetivos (productos, contenido, estructura, etc.)",
+          "Entregables según tus objetivos",
           "Optimización priorizada por impacto",
-          "Recomendaciones estratégicas para crecimiento orgánico"
+          "Recomendaciones para crecimiento orgánico"
         ]
       }
     }
@@ -277,7 +275,7 @@
     "back_to_plans": "Volver a planes",
     "products_count": "producto disponible",
     "products_count_plural": "productos disponibles",
-    "no_products": "No se encontraron productos en esta categoría.",
+    "no_products": "Sin productos en esta categoría.",
     "view_all_plans": "Ver todos los planes",
     "sort_by": "Ordenar por:",
     "sort_default": "Orden predeterminado",
@@ -291,7 +289,7 @@
   "cart": {
     "title": "Carrito de Compras",
     "empty_title": "Tu carrito está vacío",
-    "empty_message": "Agrega algunos planes a tu carrito para comenzar",
+    "empty_message": "Agrega planes a tu carrito para comenzar",
     "view_plans": "Ver planes",
     "product": "Producto",
     "price": "Precio",
@@ -304,7 +302,7 @@
     "checkout": "Finalizar compra",
     "remove_item": "Eliminar artículo",
     "warning_title": "Cambios sin guardar",
-    "warning_message": "Has realizado cambios en tu carrito que no han sido actualizados. ¿Deseas actualizar el carrito antes de continuar con la compra?",
+    "warning_message": "Tienes cambios sin actualizar. ¿Quieres guardarlos antes de continuar?",
     "update_and_continue": "Actualizar y continuar",
     "continue_without_update": "Continuar sin actualizar",
     "cancel": "Cancelar"
@@ -318,26 +316,26 @@
     "last_name": "Apellido",
     "country": "País / Región",
     "street": "Dirección de la calle",
-    "street_placeholder": "Nombre de la calle y número de la casa",
-    "apartment": "Apartamento, habitación, escalera, etc. (opcional)",
+    "street_placeholder": "Calle y número de la casa",
+    "apartment": "Apartamento, habitación, etc. (opcional)",
     "apartment_placeholder": "Apartamento, habitación, etc. (opcional)",
     "city": "Población",
     "city_placeholder": "Población",
     "state": "Región / Provincia",
     "zip": "Código postal / ZIP",
     "zip_placeholder": "Código postal (5 dígitos)",
-    "zip_help": "Debe contener exactamente 5 dígitos",
+    "zip_help": "Debe tener exactamente 5 dígitos",
     "phone": "Teléfono (opcional)",
     "phone_placeholder": "Teléfono",
     "email": "Email",
     "email_placeholder": "ejemplo@correo.com",
     "card_title": "Tarjeta de Crédito o Débito",
-    "card_description": "Completa tu compra proporcionando tus datos de pago.",
+    "card_description": "Ingresa tus datos de pago para completar la compra.",
     "card_name": "Nombre en la tarjeta",
     "card_name_placeholder": "JOHN DOE",
     "card_number": "Número de tarjeta",
     "card_number_placeholder": "•••• •••• •••• ••••",
-    "card_number_help": "Debe contener 16 dígitos",
+    "card_number_help": "Debe tener 16 dígitos",
     "card_expiry": "Fecha de expiración",
     "card_expiry_placeholder": "MM / YY",
     "cvv": "CVV",
@@ -349,40 +347,45 @@
     "total": "Total",
     "pay_now": "Pagar ahora",
     "processing": "Procesando pago...",
-    "privacy": "Tus datos personales se utilizarán para procesar tu pedido, mejorar tu experiencia en esta web y otros propósitos descritos en nuestra política de privacidad.",
+    "privacy": "Tus datos se usarán para procesar tu pedido y mejorar tu experiencia, según nuestra política de privacidad.",
     "validation": {
       "name_required": "El nombre es requerido",
-      "name_min": "El nombre debe tener al menos 2 caracteres",
+      "name_min": "Mínimo 2 caracteres",
       "lastname_required": "El apellido es requerido",
-      "lastname_min": "El apellido debe tener al menos 2 caracteres",
+      "lastname_min": "Mínimo 2 caracteres",
       "address_required": "La dirección es requerida",
-      "address_min": "La dirección debe tener al menos 5 caracteres",
+      "address_min": "Mínimo 5 caracteres",
       "city_required": "La población es requerida",
       "zip_required": "El código postal es requerido",
-      "zip_invalid": "El código postal debe tener 5 dígitos",
+      "zip_invalid": "Debe tener 5 dígitos",
       "email_required": "El email es requerido",
-      "email_invalid": "El formato del email no es válido",
-      "card_name_required": "El nombre en la tarjeta es requerido",
+      "email_invalid": "Formato de email no válido",
+      "card_name_required": "Nombre en la tarjeta requerido",
       "card_name_invalid": "Nombre inválido",
-      "card_number_required": "El número de tarjeta es requerido",
-      "card_number_invalid": "El número de tarjeta debe tener 16 dígitos",
-      "expiry_required": "La fecha de expiración es requerida",
+      "card_number_required": "Número de tarjeta requerido",
+      "card_number_invalid": "Debe tener 16 dígitos",
+      "expiry_required": "Fecha de expiración requerida",
       "expiry_incomplete": "Fecha incompleta",
       "expiry_invalid_month": "Mes inválido",
-      "expiry_expired": "La tarjeta está vencida",
-      "cvv_required": "El CVV es requerido",
-      "cvv_invalid": "El CVV debe tener 3 o 4 dígitos",
-      "payment_error": "Error al procesar el pago. Por favor, intente de nuevo."
+      "expiry_expired": "Tarjeta vencida",
+      "cvv_required": "CVV requerido",
+      "cvv_invalid": "Debe tener 3 o 4 dígitos",
+      "payment_error": "Error al procesar el pago. Intenta de nuevo."
     }
   },
   "success": {
     "title": "¡Pago Exitoso!",
-    "message": "Tu pago ha sido procesado exitosamente. Hemos enviado un correo de confirmación con los detalles de tu compra.",
+    "message": "Tu pago se procesó correctamente. Te enviamos un correo con los detalles.",
     "order_number": "Número de Pedido",
     "total_paid": "Total pagado",
-    "support_message": "Si tienes alguna pregunta sobre tu pedido, no dudes en contactarnos en",
+    "support_message": "¿Dudas sobre tu pedido? Escríbenos a",
     "back_to_home": "Volver al inicio",
     "contact_support": "Contactar soporte"
+  },
+  "map": {
+    "close": "Cerrar",
+    "show_address": "Mostrar dirección",
+    "company_name": "DSYNC"
   },
   "privacy": {
     "title": "Aviso de Privacidad",
@@ -655,11 +658,6 @@
         "16_2": "El uso continuado del sitio o la contratación de nuevos Servicios después de la publicación de cambios implicará la aceptación de la versión modificada de los Términos."
       }
     }
-  },
-  "map": {
-  "close": "Cerrar",
-  "show_address": "Mostrar dirección",
-  "company_name": "DSYNC"
-}
+  }
   
 }

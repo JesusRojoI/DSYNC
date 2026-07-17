@@ -12,16 +12,16 @@
     "secure_payment": "100% Secure Payment"
   },
   "hero": {
-    "title": "Launch your e-commerce with organic traffic that sells",
-    "subtitle": "Attract real customers from Google and turn your store into a constant sales channel without depending on advertising.",
-    "cta": "I want to grow my store"
+  "title": "Launch your e-commerce with real traffic that translates into sales"
+,    "subtitle": "Unleash a flood of real customers from Google. Turn your store into a relentless sales machine. No ads. No excuses.",
+    "cta": "I want to grow my business"
   },
   "who_we_are": {
     "title": "About Us",
-    "description": "We are a team focused on digital growth through organic strategies for e-commerce. We believe in building solid businesses, not temporary solutions.",
-    "description2": "We specialize in designing optimized stores from their foundation, integrating SEO, structure, and content to achieve visibility, positioning, and conversion. Our approach is clear: real, measurable, and scalable results.",
+    "description": "We are the team that accelerates your digital business. We deploy aggressive organic strategies for e-commerce. We don't promise magic: we build empires, not temporary fixes.",
+    "description2": "We design stores optimized from the ground up: unstoppable SEO, solid structure, and content that dominates. Our goal? Real, measurable, and scalable results. No fluff.",
     "reason_title": "The Reason Behind Your Success",
-    "reason_description": "We don't work with generic templates or improvised solutions. Each project is developed with a clear strategy focused on results.",
+    "reason_description": "Forget generic templates and weak solutions. Every project is a results machine with a clear and lethal strategy.",
     "points": [
       "Experience in e-commerce and positioning",
       "Strategies designed to generate sales",
@@ -31,7 +31,7 @@
     ]
   },
   "vision": {
-    "title": "We create digital structures that not only look good, but work and sell."
+    "title": "We design digital structures that not only look good, but crush the competition and sell relentlessly."
   },
   "plans": {
     "title": "Plans",
@@ -45,10 +45,10 @@
   "contact": {
     "sending": "Sending...",
     "wait_message": "Please wait a minute before sending another message.",
-    "error_sending": "Error sending message. Please try again.",
+    "error_sending": "Error sending. Please try again.",
     "title": "Contact Us",
-    "subtitle": "We are ready to help you take your e-commerce to the next level. Contact us and receive clear guidance on how to grow your business with organic traffic.",
-    "form_title": "Write to us",
+    "subtitle": "Take your e-commerce to the top. We guide you with no fluff to grow with unstoppable organic traffic."
+,    "form_title": "Write to us",
     "name": "Full Name",
     "company": "Company",
     "phone": "Phone",
@@ -57,7 +57,7 @@
     "message": "Message",
     "send": "Send",
     "success_title": "Message Sent!",
-    "success_message": "Thank you for contacting us. We will respond shortly.",
+    "success_message": "Thank you. We'll reply shortly.",
     "close": "Close",
     "services_list": {
       "select": "Required Service",
@@ -82,15 +82,15 @@
     "refund_policy": "Return and Refund Policy"
   },
   "product": {
-      "features_title": "Plan Features",
-"folio_number": "Folio Number",
-  "custom_total": "Custom Total (unit price, before taxes)",
-  "folio_placeholder": "Enter folio number",
-  "total_placeholder": "0.00",
-  "folio_required": "Folio number is required",
-  "total_required": "Total is required",
-  "total_invalid": "Total must be greater than $0.00",
-  "total_max_decimals": "Maximum 2 decimals allowed",
+    "features_title": "Plan Features",
+    "folio_number": "Folio Number",
+    "custom_total": "Custom Total (unit price, before taxes)",
+    "folio_placeholder": "Enter folio number",
+    "total_placeholder": "0.00",
+    "folio_required": "Folio number is required",
+    "total_required": "Total is required",
+    "total_invalid": "Total must be greater than $0.00",
+    "total_max_decimals": "Maximum 2 decimals allowed",
     "breadcrumb_home": "Home",
     "quantity": "Quantity",
     "category_label": "Category",
@@ -100,15 +100,15 @@
     "items": {
       "auditoria-seo-express": {
         "name": "SEO Express Audit Plan E-commerce",
-        "description": "Quickly detect what's stopping your organic sales",
+        "description": "Quickly detect what's holding back your organic sales",
         "features": [
           "General store review (home + 1 page)",
-          "1 list of actionable recommendations (PDF)"
+          "Actionable recommendations list (PDF)"
         ]
       },
       "optimizacion-producto-individual": {
         "name": "Individual Product Optimization Plan",
-        "description": "Turn a product into a page ready to sell on Google",
+        "description": "Turn a product into a page ready for Google",
         "features": [
           "Title and description optimization",
           "Use of 1 main keyword",
@@ -117,7 +117,7 @@
       },
       "diagnostico-tienda-online": {
         "name": "Online Store Diagnostic Plan",
-        "description": "Complete analysis of your store to identify improvement areas",
+        "description": "Analyze your store to find improvement areas",
         "features": [
           "General SEO analysis",
           "Basic structure review",
@@ -126,7 +126,7 @@
       },
       "keywords-iniciales": {
         "name": "Initial Keywords Plan",
-        "description": "Discover what your customers are searching on Google",
+        "description": "Discover what your customers search on Google",
         "features": [
           "5 keywords",
           "Search intent classification",
@@ -135,7 +135,7 @@
       },
       "categoria-optimizada": {
         "name": "Optimized Category Plan",
-        "description": "Improve a category to attract organic traffic",
+        "description": "Improve a category and attract organic traffic",
         "features": [
           "1 category optimization",
           "SEO text (100–150 words)",
@@ -144,7 +144,7 @@
       },
       "mini-seo-setup": {
         "name": "Mini SEO Setup Plan",
-        "description": "Essential adjustments for your store to start ranking",
+        "description": "Key adjustments to start ranking your store",
         "features": [
           "Basic SEO configuration",
           "Home page optimization"
@@ -161,7 +161,7 @@
       },
       "tienda-basica-seo": {
         "name": "Basic SEO Store Plan",
-        "description": "Start your store with foundations to rank on Google",
+        "description": "Start your store with foundations for Google",
         "features": [
           "Basic store structure",
           "Up to 5 products loaded",
@@ -170,7 +170,7 @@
       },
       "seo-catalogo-inicial": {
         "name": "Initial Catalog SEO Plan",
-        "description": "Optimize your catalog to start attracting traffic",
+        "description": "Optimize your catalog and start attracting traffic",
         "features": [
           "Up to 5 optimized products",
           "Basic keywords",
@@ -179,7 +179,7 @@
       },
       "tienda-optimizada-starter": {
         "name": "Optimized Store Starter Plan",
-        "description": "Store ready to sell with basic SEO structure",
+        "description": "Store ready with basic SEO structure",
         "features": [
           "Category configuration",
           "Basic SEO"
@@ -187,7 +187,7 @@
       },
       "ecommerce-seo-inicial": {
         "name": "Initial E-commerce SEO Plan",
-        "description": "Build a store designed to attract organic customers",
+        "description": "Store designed to attract organic customers",
         "features": [
           "Basic keyword research",
           "5 product optimization",
@@ -196,7 +196,7 @@
       },
       "tienda-contenido-basico": {
         "name": "Store with Basic Content Plan",
-        "description": "Combine store + content to attract traffic",
+        "description": "Store + content to attract traffic",
         "features": [
           "Optimized basic store",
           "1 blog SEO article (150–300 words)",
@@ -205,7 +205,7 @@
       },
       "posicionamiento-inicial-ecommerce": {
         "name": "Initial E-commerce Positioning Plan",
-        "description": "Improve your visibility with complete initial optimization",
+        "description": "Boost your visibility with complete initial optimization",
         "features": [
           "Complete on-page SEO",
           "Key pages optimization",
@@ -223,7 +223,7 @@
       },
       "ecommerce-blog-seo": {
         "name": "E-commerce with SEO Blog Plan",
-        "description": "Attract constant traffic with strategic content",
+        "description": "Strategic content for constant traffic",
         "features": [
           "Optimized store (up to 15 products)",
           "3 SEO articles (300–400 words)",
@@ -232,7 +232,7 @@
       },
       "tienda-organica-expandida": {
         "name": "Expanded Organic Store Plan",
-        "description": "Expand your catalog with Google-optimized structure",
+        "description": "Expanded catalog with Google-optimized structure",
         "features": [
           "Up to 25 products",
           "SEO on products and categories",
@@ -241,7 +241,7 @@
       },
       "seo-contenido-estrategico": {
         "name": "SEO + Strategic Content Plan",
-        "description": "Position your store with solid content strategy",
+        "description": "Solid content strategy to rank your store",
         "features": [
           "Keyword research",
           "5 SEO articles (500 words)",
@@ -250,7 +250,7 @@
       },
       "ecommerce-seo-profesional": {
         "name": "Professional E-commerce SEO Plan",
-        "description": "Take your store to a competitive level on Google",
+        "description": "Competitive store on Google with advanced SEO",
         "features": [
           "Technical SEO (indexing, basic speed)",
           "Advanced architecture",
@@ -259,11 +259,11 @@
       },
       "plan-orbita-360": {
         "name": "Orbit 360 Plan",
-        "description": "A fully customized solution for your business, designed to create an e-commerce and organic traffic strategy aligned with your real growth objectives",
+        "description": "Tailored solution: e-commerce and organic traffic strategy aligned with your real goals.",
         "features": [
-          "Personalized analysis of your store and market",
+          "Personalized store and market analysis",
           "Custom SEO strategy definition",
-          "Selection of deliverables according to objectives (products, content, structure, etc.)",
+          "Deliverables based on your objectives",
           "Impact-prioritized optimization",
           "Strategic recommendations for organic growth"
         ]
@@ -276,7 +276,7 @@
     "back_to_plans": "Back to plans",
     "products_count": "product available",
     "products_count_plural": "products available",
-    "no_products": "No products found in this category.",
+    "no_products": "No products in this category.",
     "view_all_plans": "View all plans",
     "sort_by": "Sort by:",
     "sort_default": "Default order",
@@ -290,7 +290,7 @@
   "cart": {
     "title": "Shopping Cart",
     "empty_title": "Your cart is empty",
-    "empty_message": "Add some plans to your cart to get started",
+    "empty_message": "Add plans to your cart to get started",
     "view_plans": "View plans",
     "product": "Product",
     "price": "Price",
@@ -303,12 +303,12 @@
     "checkout": "Checkout",
     "remove_item": "Remove item",
     "warning_title": "Unsaved changes",
-    "warning_message": "You have made changes to your cart that have not been updated. Do you want to update the cart before proceeding with the purchase?",
+    "warning_message": "You have unsaved changes. Do you want to save them before continuing?",
     "update_and_continue": "Update and continue",
     "continue_without_update": "Continue without updating",
     "cancel": "Cancel"
   },
-   "checkout": {
+  "checkout": {
     "title": "Checkout",
     "empty_cart": "Your cart is empty",
     "back_to_plans": "Back to plans",
@@ -318,7 +318,7 @@
     "country": "Country / Region",
     "street": "Street address",
     "street_placeholder": "Street name and house number",
-    "apartment": "Apartment, suite, unit, etc. (optional)",
+    "apartment": "Apartment, suite, etc. (optional)",
     "apartment_placeholder": "Apartment, suite, etc. (optional)",
     "city": "City",
     "city_placeholder": "City",
@@ -331,7 +331,7 @@
     "email": "Email",
     "email_placeholder": "example@email.com",
     "card_title": "Credit or Debit Card",
-    "card_description": "Complete your purchase by providing your payment details.",
+    "card_description": "Enter your payment details to complete the purchase.",
     "card_name": "Name on card",
     "card_name_placeholder": "JOHN DOE",
     "card_number": "Card number",
@@ -348,40 +348,45 @@
     "total": "Total",
     "pay_now": "Pay now",
     "processing": "Processing payment...",
-    "privacy": "Your personal data will be used to process your order, improve your experience on this website, and other purposes described in our privacy policy.",
+    "privacy": "Your data will be used to process your order and improve your experience, per our privacy policy.",
     "validation": {
       "name_required": "First name is required",
-      "name_min": "First name must have at least 2 characters",
+      "name_min": "At least 2 characters",
       "lastname_required": "Last name is required",
-      "lastname_min": "Last name must have at least 2 characters",
+      "lastname_min": "At least 2 characters",
       "address_required": "Address is required",
-      "address_min": "Address must have at least 5 characters",
+      "address_min": "At least 5 characters",
       "city_required": "City is required",
       "zip_required": "ZIP code is required",
-      "zip_invalid": "ZIP code must have 5 digits",
+      "zip_invalid": "Must be 5 digits",
       "email_required": "Email is required",
       "email_invalid": "Invalid email format",
       "card_name_required": "Name on card is required",
       "card_name_invalid": "Invalid name",
       "card_number_required": "Card number is required",
-      "card_number_invalid": "Card number must have 16 digits",
+      "card_number_invalid": "Must be 16 digits",
       "expiry_required": "Expiration date is required",
       "expiry_incomplete": "Incomplete date",
       "expiry_invalid_month": "Invalid month",
-      "expiry_expired": "Card is expired",
+      "expiry_expired": "Card expired",
       "cvv_required": "CVV is required",
-      "cvv_invalid": "CVV must have 3 or 4 digits",
-      "payment_error": "Payment processing error. Please try again."
+      "cvv_invalid": "Must be 3 or 4 digits",
+      "payment_error": "Payment error. Please try again."
     }
   },
-   "success": {
+  "success": {
     "title": "Payment Successful!",
-    "message": "Your payment has been processed successfully. We have sent a confirmation email with the details of your purchase.",
+    "message": "Your payment was processed successfully. We sent you an email with the details.",
     "order_number": "Order Number",
     "total_paid": "Total paid",
-    "support_message": "If you have any questions about your order, please contact us at",
+    "support_message": "Questions about your order? Contact us at",
     "back_to_home": "Back to home",
     "contact_support": "Contact support"
+  },
+  "map": {
+    "close": "Close",
+    "show_address": "Show address",
+    "company_name": "DSYNC"
   },
    "privacy": {
     "title": "Privacy Notice",
@@ -655,10 +660,5 @@
         "16_2": "Continued use of the site or contracting of new Services after the publication of changes shall imply acceptance of the modified version of the Terms."
       }
     }
-  },
-  "map": {
-  "close": "Close",
-  "show_address": "Show address",
-  "company_name": "DSYNC"
-}
+  }
 }
