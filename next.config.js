@@ -4,10 +4,9 @@ const nextConfig = {
     domains: ['images.unsplash.com', 'flagcdn.com'],
   },
   env: {
-    PORT: process.env.PORT || '3026',
-    OCTANO_BASE_URL: process.env.OCTANO_BASE_URL,
-    OCTANO_EMAIL: process.env.OCTANO_EMAIL,
-    OCTANO_PASSWORD: process.env.OCTANO_PASSWORD,
+    KEYCOP_EMAIL: process.env.KEYCOP_EMAIL,
+    KEYCOP_PASSWORD: process.env.KEYCOP_PASSWORD,
+    KEYCOP_API_URL: process.env.KEYCOP_API_URL,
     RESEND_API_KEY: process.env.RESEND_API_KEY,
     EMAIL_FROM: process.env.EMAIL_FROM,
     ADMIN_EMAIL: process.env.ADMIN_EMAIL,

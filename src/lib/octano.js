@@ -1,3 +1,4 @@
+/*
 const OCTANO_BASE_URL = process.env.OCTANO_BASE_URL || 'https://pagos.octanopayments.com/api/v1'
 const OCTANO_EMAIL = process.env.OCTANO_EMAIL
 const OCTANO_PASSWORD = process.env.OCTANO_PASSWORD
@@ -121,3 +122,5 @@ export async function procesarPago(token, datos) {
     message: data.message || (data.status === 'APPROVED' ? 'Pago aprobado' : 'Pago rechazado'),
   }
 }
+
+*/
