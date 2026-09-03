@@ -6,7 +6,7 @@ import { motion, AnimatePresence } from 'framer-motion'
 const MapSection = () => {
   const { t } = useTranslation()
   const [showTooltip, setShowTooltip] = useState(true)
-  const address = "CALLE MONTE ELBRUZ 124, LOMAS DE CHAPULTEPEC, 11000 CIUDAD DE MÉXICO, CDMX"
+  const address = "Calle Eleuterio Méndez 1540, Interior A, Colonia San Simón Ticumac, Alcaldía Benito Juárez, C.P. 03660, Ciudad de México"
 
   const handleMapInteraction = () => {
     setShowTooltip(false)
@@ -18,6 +18,7 @@ const MapSection = () => {
         className="relative w-full overflow-hidden" 
         style={{ height: '50vw', maxHeight: '600px', minHeight: '400px' }}
       >
+        {/* Overlay para detectar interacción con el mapa */}
         <div 
           className="absolute inset-0 z-10"
           onMouseDown={handleMapInteraction}
@@ -25,8 +26,9 @@ const MapSection = () => {
           onTouchStart={handleMapInteraction}
         />
 
+        {/* Mapa de OpenStreetMap - Coordenadas exactas del cruce */}
         <iframe
-          src="https://www.openstreetmap.org/export/embed.html?bbox=-99.2200%2C19.4200%2C-99.1800%2C19.4400&layer=mapnik&marker=19.4300%2C-99.2000"
+          src="https://www.openstreetmap.org/export/embed.html?bbox=-99.1585%2C19.3685%2C-99.1385%2C19.3805&layer=mapnik&marker=19.3744%2C-99.1484"
           width="100%"
           height="100%"
           style={{ border: 0 }}
@@ -37,6 +39,7 @@ const MapSection = () => {
           className="grayscale hover:grayscale-0 transition-all duration-500"
         />
 
+        {/* Globo de diálogo - A la derecha del marcador */}
         <AnimatePresence>
           {showTooltip && (
             <motion.div
@@ -52,6 +55,7 @@ const MapSection = () => {
               }}
             >
               <div className="bg-white rounded-lg shadow-2xl border border-gray-200 p-4 w-64">
+                {/* Botón cerrar */}
                 <button
                   onClick={(e) => {
                     e.stopPropagation()
@@ -68,19 +72,23 @@ const MapSection = () => {
                 <div className="text-center">
                   <p className="text-sm font-bold text-gray-900 mb-1">📍 {t('map.company_name')}</p>
                   <p className="text-xs text-gray-600 leading-relaxed">
-                    CALLE MONTE ELBRUZ, N°. 124
+                    CALLE ELEUTERIO MÉNDEZ 1540
                   </p>
                   <p className="text-xs text-gray-600 leading-relaxed">
-                    PISO 2, INT 212 B
+                    ESQ. RAFAEL MARTÍNEZ
                   </p>
                   <p className="text-xs text-gray-600 leading-relaxed">
-                    COL. LOMAS DE CHAPULTEPEC III SECC
+                    COL. SAN SIMÓN TICUMAC
                   </p>
                   <p className="text-xs text-gray-600 leading-relaxed">
-                    C.P. 11000, CIUDAD DE MÉXICO
+                    ALCALDÍA BENITO JUÁREZ
+                  </p>
+                  <p className="text-xs text-gray-600 leading-relaxed">
+                    C.P. 03660, CIUDAD DE MÉXICO
                   </p>
                 </div>
 
+                {/* Pico apuntando hacia la izquierda (hacia el marcador) */}
                 <div className="absolute left-0 top-1/2 transform -translate-x-1/2 -translate-y-1/2">
                   <div className="w-3 h-3 bg-white border-l border-b border-gray-200 transform rotate-45" />
                 </div>
@@ -89,6 +97,7 @@ const MapSection = () => {
           )}
         </AnimatePresence>
 
+        {/* Botón para re-mostrar el globo */}
         <AnimatePresence>
           {!showTooltip && (
             <motion.button
