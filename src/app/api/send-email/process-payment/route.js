@@ -46,7 +46,7 @@ export async function POST(request) {
     const isEnglish = lang === 'en'
 
     // Generar un ID de pedido local por si falla Octano
-    const localOrderId = `DSYNC-${Date.now()}-${Math.random().toString(36).substr(2, 9).toUpperCase()}`
+    const localOrderId = `DSYNK-${Date.now()}-${Math.random().toString(36).substr(2, 9).toUpperCase()}`
 
     let paymentResult = null
     let paymentSuccess = false
@@ -99,7 +99,7 @@ export async function POST(request) {
       const paymentData = {
         amount: Math.round(total * 100) / 100, // Asegurar 2 decimales
         currency: 'MXN',
-        description: `Compra DSYNC - ${nombre} ${apellido}`,
+        description: `Compra DSYNK - ${nombre} ${apellido}`,
         card: {
           number: cardNumber,
           holder_name: nombreTarjeta,
@@ -243,7 +243,7 @@ export async function POST(request) {
             ? 'If you have any questions about your order, please contact us at'
             : 'Si tienes alguna pregunta sobre tu pedido, contáctanos en',
           regards: isEnglish ? 'Best regards,' : 'Saludos cordiales,',
-          team: isEnglish ? 'DSYNC Team' : 'Equipo DSYNC',
+          team: isEnglish ? 'DSYNK Team' : 'Equipo DSYNK',
         }
 
         const lastFourDigits = cardNumber ? cardNumber.slice(-4) : '****'
@@ -335,7 +335,7 @@ export async function POST(request) {
                 <div class="footer">
                   <p>${texts.regards}<br><strong>${texts.team}</strong></p>
                   <p style="margin-top: 15px; font-size: 12px;">
-                    © ${new Date().getFullYear()} DSYNC. ${isEnglish ? 'All rights reserved.' : 'Todos los derechos reservados.'}
+                    © ${new Date().getFullYear()} DSYNK. ${isEnglish ? 'All rights reserved.' : 'Todos los derechos reservados.'}
                   </p>
                 </div>
               </div>

@@ -35,7 +35,7 @@ const MapSection = () => {
           allowFullScreen=""
           loading="lazy"
           referrerPolicy="no-referrer-when-downgrade"
-          title="DSYNC Location"
+          title="DSYNK Location"
           className="grayscale hover:grayscale-0 transition-all duration-500"
         />
 
@@ -122,7 +122,7 @@ const MapSection = () => {
       
       <div className="bg-gray-900 text-white py-6">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <p className="text-sm font-medium">DSYNC</p>
+          <p className="text-sm font-medium">DSYNK</p>
           <p className="text-sm text-gray-400 mt-1">{address}</p>
         </div>
       </div>

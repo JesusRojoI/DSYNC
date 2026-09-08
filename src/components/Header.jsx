@@ -23,10 +23,10 @@ const Header = () => {
   }, [])
 
   const menuItems = [
-  { label: t('header.who_we_are'), href: '/#quienessomos' },
-  { label: t('header.why_choose_us'), href: '/#porqueelegirnos' },
-  { label: t('header.plans'), href: '/#planes' },
-]
+    { label: t('header.who_we_are'), href: '/#quienessomos' },
+    { label: t('header.why_choose_us'), href: '/#porqueelegirnos' },
+    { label: t('header.plans'), href: '/#planes' },
+  ]
 
   return (
     <>
@@ -66,9 +66,9 @@ const Header = () => {
               {/* Cart Button */}
               <Link href="/carrito" className="relative p-2 text-gray-700 hover:text-gray-900 transition-colors">
                 <motion.div
-                  whileHover={{ scale: 1.1 }}
+                  whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
-                  className="flex items-center"
+                  className="flex items-center relative"
                 >
                   <FiShoppingCart className="w-6 h-6" />
                   <span className="ml-2 font-medium hidden sm:inline">
@@ -78,7 +78,9 @@ const Header = () => {
                     <motion.span
                       initial={{ scale: 0 }}
                       animate={{ scale: 1 }}
-                      className="absolute -top-1 -right-1 bg-red-500 text-white text-xs rounded-full w-5 h-5 flex items-center justify-center"
+                      whileHover={{ scale: 1.25 }}
+                      transition={{ type: "spring", stiffness: 300, damping: 15 }}
+                      className="absolute -top-3 left-3 bg-red-500 text-white text-xs font-bold rounded-full w-6 h-6 flex items-center justify-center shadow-lg z-10"
                     >
                       {getItemCount()}
                     </motion.span>

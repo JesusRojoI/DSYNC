@@ -37,9 +37,9 @@ export async function POST(request) {
     // Textos según idioma
     const texts = {
       adminSubject: isEnglish 
-        ? `New Contact from ${name} - DSYNC Website`
-        : `Nuevo contacto de ${name} - DSYNC Website`,
-      adminTitle: isEnglish ? 'New Contact - DSYNC' : 'Nuevo Contacto - DSYNC',
+        ? `New Contact from ${name} - DSYNK Website`
+        : `Nuevo contacto de ${name} - DSYNK Website`,
+      adminTitle: isEnglish ? 'New Contact - DSYNK' : 'Nuevo Contacto - DSYNK',
       adminSubtitle: isEnglish ? 'Website contact form' : 'Formulario de contacto web',
       labelName: isEnglish ? 'Name:' : 'Nombre:',
       labelCompany: isEnglish ? 'Company:' : 'Empresa:',
@@ -50,8 +50,8 @@ export async function POST(request) {
       
       // Confirmación al usuario
       userSubject: isEnglish 
-        ? 'We have received your message - DSYNC'
-        : 'Hemos recibido tu mensaje - DSYNC',
+        ? 'We have received your message - DSYNK'
+        : 'Hemos recibido tu mensaje - DSYNK',
       userTitle: isEnglish ? 'Thank you for contacting us!' : '¡Gracias por contactarnos!',
       userGreeting: isEnglish ? `Hello ${name},` : `Hola ${name},`,
       userMessage: isEnglish
@@ -63,7 +63,7 @@ export async function POST(request) {
       userSalutation: isEnglish
         ? 'Best regards,'
         : 'Saludos cordiales,',
-      userTeam: isEnglish ? 'DSYNC Team' : 'Equipo DSYNC',
+      userTeam: isEnglish ? 'DSYNK Team' : 'Equipo DSYNK',
     }
 
     // Construir el contenido del email para el administrador

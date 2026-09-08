@@ -11,6 +11,97 @@ export default function CheckoutPage() {
   const { cartItems } = useCart()
   const router = useRouter()
 
+  // Lista de países con traducciones
+  const countriesList = [
+    { code: 'MX', es: 'México', en: 'Mexico' },
+    { code: 'US', es: 'Estados Unidos', en: 'United States' },
+    { code: 'CA', es: 'Canadá', en: 'Canada' },
+    { code: 'AR', es: 'Argentina', en: 'Argentina' },
+    { code: 'BO', es: 'Bolivia', en: 'Bolivia' },
+    { code: 'BR', es: 'Brasil', en: 'Brazil' },
+    { code: 'CL', es: 'Chile', en: 'Chile' },
+    { code: 'CO', es: 'Colombia', en: 'Colombia' },
+    { code: 'CR', es: 'Costa Rica', en: 'Costa Rica' },
+    { code: 'CU', es: 'Cuba', en: 'Cuba' },
+    { code: 'EC', es: 'Ecuador', en: 'Ecuador' },
+    { code: 'SV', es: 'El Salvador', en: 'El Salvador' },
+    { code: 'GT', es: 'Guatemala', en: 'Guatemala' },
+    { code: 'HN', es: 'Honduras', en: 'Honduras' },
+    { code: 'NI', es: 'Nicaragua', en: 'Nicaragua' },
+    { code: 'PA', es: 'Panamá', en: 'Panama' },
+    { code: 'PY', es: 'Paraguay', en: 'Paraguay' },
+    { code: 'PE', es: 'Perú', en: 'Peru' },
+    { code: 'UY', es: 'Uruguay', en: 'Uruguay' },
+    { code: 'VE', es: 'Venezuela', en: 'Venezuela' },
+    { code: 'ES', es: 'España', en: 'Spain' },
+    { code: 'PT', es: 'Portugal', en: 'Portugal' },
+    { code: 'FR', es: 'Francia', en: 'France' },
+    { code: 'DE', es: 'Alemania', en: 'Germany' },
+    { code: 'IT', es: 'Italia', en: 'Italy' },
+    { code: 'UK', es: 'Reino Unido', en: 'United Kingdom' },
+    { code: 'IE', es: 'Irlanda', en: 'Ireland' },
+    { code: 'NL', es: 'Países Bajos', en: 'Netherlands' },
+    { code: 'BE', es: 'Bélgica', en: 'Belgium' },
+    { code: 'CH', es: 'Suiza', en: 'Switzerland' },
+    { code: 'AT', es: 'Austria', en: 'Austria' },
+    { code: 'SE', es: 'Suecia', en: 'Sweden' },
+    { code: 'NO', es: 'Noruega', en: 'Norway' },
+    { code: 'DK', es: 'Dinamarca', en: 'Denmark' },
+    { code: 'FI', es: 'Finlandia', en: 'Finland' },
+    { code: 'PL', es: 'Polonia', en: 'Poland' },
+    { code: 'CZ', es: 'República Checa', en: 'Czech Republic' },
+    { code: 'GR', es: 'Grecia', en: 'Greece' },
+    { code: 'RU', es: 'Rusia', en: 'Russia' },
+    { code: 'CN', es: 'China', en: 'China' },
+    { code: 'JP', es: 'Japón', en: 'Japan' },
+    { code: 'KR', es: 'Corea del Sur', en: 'South Korea' },
+    { code: 'IN', es: 'India', en: 'India' },
+    { code: 'AU', es: 'Australia', en: 'Australia' },
+    { code: 'NZ', es: 'Nueva Zelanda', en: 'New Zealand' },
+    { code: 'ZA', es: 'Sudáfrica', en: 'South Africa' },
+    { code: 'EG', es: 'Egipto', en: 'Egypt' },
+    { code: 'IL', es: 'Israel', en: 'Israel' },
+    { code: 'TR', es: 'Turquía', en: 'Turkey' },
+    { code: 'AE', es: 'Emiratos Árabes Unidos', en: 'United Arab Emirates' },
+    { code: 'SA', es: 'Arabia Saudita', en: 'Saudi Arabia' },
+  ]
+
+  // Lista de estados de México
+  const statesList = [
+    { es: 'Aguascalientes', en: 'Aguascalientes' },
+    { es: 'Baja California', en: 'Baja California' },
+    { es: 'Baja California Sur', en: 'Baja California Sur' },
+    { es: 'Campeche', en: 'Campeche' },
+    { es: 'Chiapas', en: 'Chiapas' },
+    { es: 'Chihuahua', en: 'Chihuahua' },
+    { es: 'Ciudad de México', en: 'Mexico City' },
+    { es: 'Coahuila', en: 'Coahuila' },
+    { es: 'Colima', en: 'Colima' },
+    { es: 'Durango', en: 'Durango' },
+    { es: 'Estado de México', en: 'State of Mexico' },
+    { es: 'Guanajuato', en: 'Guanajuato' },
+    { es: 'Guerrero', en: 'Guerrero' },
+    { es: 'Hidalgo', en: 'Hidalgo' },
+    { es: 'Jalisco', en: 'Jalisco' },
+    { es: 'Michoacán', en: 'Michoacán' },
+    { es: 'Morelos', en: 'Morelos' },
+    { es: 'Nayarit', en: 'Nayarit' },
+    { es: 'Nuevo León', en: 'Nuevo León' },
+    { es: 'Oaxaca', en: 'Oaxaca' },
+    { es: 'Puebla', en: 'Puebla' },
+    { es: 'Querétaro', en: 'Querétaro' },
+    { es: 'Quintana Roo', en: 'Quintana Roo' },
+    { es: 'San Luis Potosí', en: 'San Luis Potosí' },
+    { es: 'Sinaloa', en: 'Sinaloa' },
+    { es: 'Sonora', en: 'Sonora' },
+    { es: 'Tabasco', en: 'Tabasco' },
+    { es: 'Tamaulipas', en: 'Tamaulipas' },
+    { es: 'Tlaxcala', en: 'Tlaxcala' },
+    { es: 'Veracruz', en: 'Veracruz' },
+    { es: 'Yucatán', en: 'Yucatán' },
+    { es: 'Zacatecas', en: 'Zacatecas' },
+  ]
+
   const [formData, setFormData] = useState({
     nombre: '',
     apellido: '',
@@ -102,7 +193,6 @@ export default function CheckoutPage() {
   const handleCvvChange = (e) => {
     let value = e.target.value
     
-    // Si el usuario está borrando (la longitud disminuyó)
     if (value.length < formData.cvv.length) {
       const newRaw = formData.cvv_raw.slice(0, -1)
       const newDisplay = '•'.repeat(newRaw.length)
@@ -113,10 +203,8 @@ export default function CheckoutPage() {
       return
     }
     
-    // Obtener solo el último carácter ingresado
     const lastChar = value.charAt(value.length - 1)
     
-    // Si es un número, agregarlo
     if (/\d/.test(lastChar) && formData.cvv_raw.length < 4) {
       const newRaw = formData.cvv_raw + lastChar
       const newDisplay = '•'.repeat(newRaw.length)
@@ -264,9 +352,11 @@ export default function CheckoutPage() {
                     <label className="block text-sm font-medium text-gray-700 mb-2">{t('checkout.country')} *</label>
                     <select name="pais" value={formData.pais} onChange={handleChange}
                       className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-gray-900 focus:border-transparent bg-white">
-                      <option value="México">México</option>
-                      <option value="Estados Unidos">Estados Unidos</option>
-                      <option value="Canadá">Canadá</option>
+                      {countriesList.map((country) => (
+                        <option key={country.code} value={country.es}>
+                          {i18n.language === 'en' ? country.en : country.es}
+                        </option>
+                      ))}
                     </select>
                   </div>
 
@@ -297,10 +387,11 @@ export default function CheckoutPage() {
                       <label className="block text-sm font-medium text-gray-700 mb-2">{t('checkout.state')} *</label>
                       <select name="region" value={formData.region} onChange={handleChange}
                         className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-gray-900 focus:border-transparent bg-white">
-                        <option value="Ciudad de México">Ciudad de México</option>
-                        <option value="Estado de México">Estado de México</option>
-                        <option value="Nuevo León">Nuevo León</option>
-                        <option value="Jalisco">Jalisco</option>
+                        {statesList.map((state) => (
+                          <option key={state.es} value={state.es}>
+                            {i18n.language === 'en' ? state.en : state.es}
+                          </option>
+                        ))}
                       </select>
                     </div>
                   </div>
@@ -334,7 +425,7 @@ export default function CheckoutPage() {
                 <div className="bg-white rounded-2xl shadow-lg p-8">
                   <div className="flex items-center justify-between mb-6">
                     <h2 className="text-2xl font-bold text-gray-900">{t('checkout.card_title')}</h2>
-                    <img src="/octano_logo.svg" alt="Octano Payments" className="h-10 w-auto brightness-0" />
+                    <img src="/octano_logo.png" alt="Octano Payments" className="h-10" />
                   </div>
                   <p className="text-gray-600 mb-6">{t('checkout.card_description')}</p>
 

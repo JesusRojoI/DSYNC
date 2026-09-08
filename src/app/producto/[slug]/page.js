@@ -202,7 +202,7 @@ export default function ProductPage() {
                 <div className="text-8xl mb-6">{product.icon}</div>
                 <img 
                   src="/logo.svg" 
-                  alt="DSYNC" 
+                  alt="DSYNK"
                   className="mx-auto opacity-80"
                   style={{ width: '60%' }}
                 />
