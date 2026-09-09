@@ -312,7 +312,9 @@
     "warning_message": "Tienes cambios sin actualizar. ¿Quieres guardarlos antes de continuar?",
     "update_and_continue": "Actualizar y continuar",
     "continue_without_update": "Continuar sin actualizar",
-    "cancel": "Cancelar"
+    "cancel": "Cancelar",
+    "empty_warning_title": "Tu carrito quedará vacío",
+  "empty_warning_message": "Has eliminado todos los productos. Presiona \"Actualizar carrito\" para confirmar esta acción."
   },
   "checkout": {
     "title": "Finalizar compra",

@@ -86,6 +86,13 @@ const PlansSection = () => {
     })
   }
 
+  const categoryKeys = {
+  0: 'plans.tab_start',
+  1: 'plans.tab_scale',
+  2: 'plans.tab_domination',
+  3: 'plans.tab_custom',
+}
+
   const getProductSlug = (planId) => {
     return planId.replace(/_/g, '-')
   }

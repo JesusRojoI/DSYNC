@@ -15,6 +15,7 @@ export default function CartPage() {
   const [editableItems, setEditableItems] = useState([])
   const [hasChanges, setHasChanges] = useState(false)
   const [showCheckoutWarning, setShowCheckoutWarning] = useState(false)
+  const [showEmptyWarning, setShowEmptyWarning] = useState(false)
 
   const formatPrice = (price) => {
     return price.toLocaleString('es-MX', {
@@ -44,11 +45,18 @@ export default function CartPage() {
   }
 
   const handleRemoveItem = (productId) => {
-    setEditableItems(prev => prev.filter(item => item.id !== productId))
+    const newItems = editableItems.filter(item => item.id !== productId)
+    setEditableItems(newItems)
     setHasChanges(true)
+    
+    // Si se eliminó el último producto, mostrar advertencia de carrito vacío
+    if (newItems.length === 0) {
+      setShowEmptyWarning(true)
+    }
   }
 
   const handleUpdateCart = () => {
+    // Actualizar el carrito original con los cambios
     editableItems.forEach(item => {
       const originalItem = cartItems.find(orig => orig.id === item.id)
       if (originalItem) {
@@ -58,6 +66,7 @@ export default function CartPage() {
       }
     })
 
+    // Eliminar items que fueron removidos
     const editableIds = editableItems.map(item => item.id)
     cartItems.forEach(item => {
       if (!editableIds.includes(item.id)) {
@@ -66,6 +75,7 @@ export default function CartPage() {
     })
 
     setHasChanges(false)
+    setShowEmptyWarning(false)
   }
 
   const handleCheckout = () => {
@@ -91,7 +101,8 @@ export default function CartPage() {
   const iva = subtotal * 0.16
   const total = subtotal + iva
 
-  if (editableItems.length === 0) {
+  // Estado de carrito vacío (cuando el usuario eliminó todo pero no ha confirmado)
+  if (editableItems.length === 0 && cartItems.length === 0) {
     return (
       <div className="min-h-screen bg-gray-50 pt-24 pb-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -231,6 +242,30 @@ export default function CartPage() {
             </div>
           </div>
 
+          {/* Aviso de carrito vacío */}
+<AnimatePresence>
+  {showEmptyWarning && editableItems.length === 0 && (
+    <motion.div
+      initial={{ opacity: 0, y: -10 }}
+      animate={{ opacity: 1, y: 0 }}
+      exit={{ opacity: 0, y: -10 }}
+      className="mb-8 p-6 bg-yellow-50 border border-yellow-200 rounded-2xl text-center"
+    >
+      <div className="flex items-center justify-center space-x-3 mb-2">
+        <svg className="w-6 h-6 text-yellow-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-2.5L13.732 4c-.77-.833-1.964-.833-2.732 0L4.082 16.5c-.77.833.192 2.5 1.732 2.5z" />
+        </svg>
+        <p className="text-lg font-bold text-yellow-800">
+          {t('cart.empty_warning_title')}
+        </p>
+      </div>
+      <p className="text-yellow-700 mb-4">
+        {t('cart.empty_warning_message')}
+      </p>
+    </motion.div>
+  )}
+</AnimatePresence>
+
           {/* Botón Actualizar */}
           <div className="flex justify-end mb-8">
             <motion.button
@@ -248,44 +283,46 @@ export default function CartPage() {
             </motion.button>
           </div>
 
-          {/* Totales */}
-          <div className="bg-white rounded-2xl shadow-lg p-8">
-            <h2 className="text-2xl font-bold text-gray-900 mb-6">{t('cart.total_section')}</h2>
-            
-            <div className="space-y-4">
-              <div className="flex justify-between items-center">
-                <span className="text-gray-600">{t('cart.subtotal')}</span>
-                <span className="text-lg font-medium">${formatPrice(subtotal)}</span>
-              </div>
+          {/* Totales - Solo mostrar si hay items */}
+          {editableItems.length > 0 && (
+            <div className="bg-white rounded-2xl shadow-lg p-8">
+              <h2 className="text-2xl font-bold text-gray-900 mb-6">{t('cart.total_section')}</h2>
               
-              <div className="flex justify-between items-center">
-                <span className="text-gray-600">{t('cart.iva')}</span>
-                <span className="text-lg font-medium">${formatPrice(iva)}</span>
-              </div>
-              
-              <div className="border-t pt-4">
+              <div className="space-y-4">
                 <div className="flex justify-between items-center">
-                  <span className="text-xl font-bold text-gray-900">{t('cart.total')}</span>
-                  <span className="text-2xl font-bold text-gray-900">
-                    ${formatPrice(total)}
-                  </span>
+                  <span className="text-gray-600">{t('cart.subtotal')}</span>
+                  <span className="text-lg font-medium">${formatPrice(subtotal)}</span>
+                </div>
+                
+                <div className="flex justify-between items-center">
+                  <span className="text-gray-600">{t('cart.iva')}</span>
+                  <span className="text-lg font-medium">${formatPrice(iva)}</span>
+                </div>
+                
+                <div className="border-t pt-4">
+                  <div className="flex justify-between items-center">
+                    <span className="text-xl font-bold text-gray-900">{t('cart.total')}</span>
+                    <span className="text-2xl font-bold text-gray-900">
+                      ${formatPrice(total)}
+                    </span>
+                  </div>
                 </div>
               </div>
-            </div>
 
-            <motion.button
-              onClick={handleCheckout}
-              className="w-full mt-8 py-4 bg-gray-900 text-white rounded-full font-semibold text-lg hover:bg-gray-800 transition-colors shadow-lg"
-              whileHover={{ scale: 1.02 }}
-              whileTap={{ scale: 0.98 }}
-            >
-              {t('cart.checkout')}
-            </motion.button>
-          </div>
+              <motion.button
+                onClick={handleCheckout}
+                className="w-full mt-8 py-4 bg-gray-900 text-white rounded-full font-semibold text-lg hover:bg-gray-800 transition-colors shadow-lg"
+                whileHover={{ scale: 1.02 }}
+                whileTap={{ scale: 0.98 }}
+              >
+                {t('cart.checkout')}
+              </motion.button>
+            </div>
+          )}
         </motion.div>
       </div>
 
-      {/* Modal de advertencia */}
+      {/* Modal de advertencia de checkout */}
       <AnimatePresence>
         {showCheckoutWarning && (
           <motion.div

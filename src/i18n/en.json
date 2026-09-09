@@ -312,7 +312,9 @@
     "warning_message": "You have unsaved changes. Do you want to save them before continuing?",
     "update_and_continue": "Update and continue",
     "continue_without_update": "Continue without updating",
-    "cancel": "Cancel"
+    "cancel": "Cancel",
+    "empty_warning_title": "Your cart will be empty",
+  "empty_warning_message": "You have removed all products. Press \"Update cart\" to confirm this action."
   },
   "checkout": {
     "title": "Checkout",

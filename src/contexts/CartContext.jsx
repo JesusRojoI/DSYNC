@@ -41,11 +41,11 @@ export const CartProvider = ({ children }) => {
       if (existing) {
         return prev.map(item =>
           item.id === product.id
-            ? { ...item, quantity: item.quantity + 1, name: product.name, category: product.category }
+            ? { ...item, quantity: item.quantity + 1, name: product.name, category: product.category, categoryKey: product.categoryKey }
             : item
         )
       }
-      return [...prev, { ...product, quantity: 1 }]
+      return [...prev, { ...product, quantity: 1, categoryKey: product.categoryKey || null }]
     })
     setIsCartOpen(true)
   }
@@ -74,10 +74,10 @@ export const CartProvider = ({ children }) => {
     return cartItems.reduce((count, item) => count + item.quantity, 0)
   }
 
-  const updateItemName = (productId, newName) => {
+  const updateItemName = (productId, newName, newCategory) => {
     setCartItems(prev =>
       prev.map(item =>
-        item.id === productId ? { ...item, name: newName } : item
+        item.id === productId ? { ...item, name: newName, category: newCategory || item.category } : item
       )
     )
   }
@@ -104,5 +104,3 @@ export const CartProvider = ({ children }) => {
     </CartContext.Provider>
   )
 }
-
-export default CartContext
