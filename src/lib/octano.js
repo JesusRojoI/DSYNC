@@ -65,6 +65,32 @@ export async function tokenizarTarjeta(token, cardData) {
     }
   }
 
+  // Normalizar mes y año
+  let month = String(cardData.month || '').trim()
+  let year = String(cardData.year || '').trim()
+
+  // Quitar cualquier caracter no numérico
+  month = month.replace(/\D/g, '')
+  year = year.replace(/\D/g, '')
+
+  // Mes: asegurar 2 dígitos
+  month = month.padStart(2, '0')
+
+  // Año: si viene "2025" → "25", si viene "25" → "25"
+  if (year.length === 4) {
+    year = year.slice(-2)
+  } else if (year.length !== 2) {
+    throw new Error(`Año de expiración inválido: "${cardData.year}"`)
+  }
+
+  // Validaciones básicas
+  const monthNum = parseInt(month, 10)
+  if (isNaN(monthNum) || monthNum < 1 || monthNum > 12) {
+    throw new Error(`Mes de expiración inválido: "${cardData.month}"`)
+  }
+
+  console.log('📅 Fecha de expiración normalizada (YY):', { month, year })
+
   const response = await fetch(`${OCTANO_BASE_URL}/card/tokenizer`, {
     method: 'POST',
     headers: {
@@ -76,8 +102,8 @@ export async function tokenizarTarjeta(token, cardData) {
       cardData: {
         cardNumber: cardData.number.replace(/\s/g, ''),
         cardholderName: cardData.name,
-        expirationYear: `20${cardData.year}`,
-        expirationMonth: cardData.month,
+        expirationYear: year,      // 👈 2 dígitos
+        expirationMonth: month,
       },
     }),
   })

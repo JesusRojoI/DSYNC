@@ -52,16 +52,31 @@ export async function POST(request) {
       last4 = numeroTarjeta.replace(/\s/g, '').slice(-4)
       console.log('🔧 [MODO SIMULACIÓN] Token simulado:', cardToken)
     } else {
-      const expDate = fechaExpiracion.replace(/\s/g, '').replace('/', '')
-      const expMonth = expDate.slice(0, 2)
-      const expYear = expDate.slice(2, 4)
+      // 🔴 Parseo para obtener MM y YY (2 dígitos)
+      const cleaned = fechaExpiracion.replace(/\D/g, '')  // Solo dígitos
+
+      let expMonth, expYear
+
+      if (cleaned.length === 4) {
+        // "0525" → mes "05", año "25"
+        expMonth = cleaned.slice(0, 2)
+        expYear = cleaned.slice(2, 4)
+      } else if (cleaned.length === 6) {
+        // "052025" → mes "05", año "2025" → se convierte a "25" en tokenizarTarjeta
+        expMonth = cleaned.slice(0, 2)
+        expYear = cleaned.slice(4, 6)
+      } else {
+        throw new Error(`Formato de fecha de expiración inválido: "${fechaExpiracion}"`)
+      }
+
+      console.log('📅 Fecha parseada:', { expMonth, expYear, original: fechaExpiracion })
 
       console.log('🔐 Tokenizando tarjeta...')
       const tokenizado = await tokenizarTarjeta(token, {
         number: numeroTarjeta,
         name: nombreTarjeta,
         month: expMonth,
-        year: expYear,
+        year: expYear,  // 👈 Se envía "25"
       })
       cardToken = tokenizado.token
       last4 = tokenizado.last4
