@@ -22,7 +22,8 @@ export async function POST(request) {
       subtotal,
       iva,
       total,
-      language
+      language,
+      redirectUrl,
     } = body
 
     console.log('💳 [PAGO] Iniciando proceso para:', `${nombre} ${apellido}`)
@@ -37,7 +38,7 @@ export async function POST(request) {
     const token = await octanoLogin()
     if (!token) {
       return NextResponse.json(
-        { success: false, error: isEnglish ? 'Authentication error with payment processor' : 'Error de autenticación con el procesador de pagos' },
+        { success: false, error: isEnglish ? 'Auth error' : 'Error de autenticación' },
         { status: 500 }
       )
     }
@@ -55,6 +56,7 @@ export async function POST(request) {
       const expMonth = expDate.slice(0, 2)
       const expYear = expDate.slice(2, 4)
 
+      console.log('🔐 Tokenizando tarjeta...')
       const tokenizado = await tokenizarTarjeta(token, {
         number: numeroTarjeta,
         name: nombreTarjeta,
@@ -67,19 +69,42 @@ export async function POST(request) {
     }
 
     // 3. Procesar pago
+    console.log('💰 Procesando pago...')
     const resultado = await procesarPago(token, {
       amount: Math.round(total * 100) / 100,
       orderId,
-      customerName,
-      customerEmail: email,
+      redirectUrl,
+      customer: {
+        firstName: nombre,
+        lastName: apellido,
+        email: email,
+        phone: telefono,
+        address1: direccion,
+        city: poblacion,
+        state: region,
+        postalCode: codigoPostal,
+        country: 'MX',
+      },
       cardToken,
       cvv: cvv || '000',
+      metadata: { ip: '127.0.0.1' },
     })
 
-    console.log('💰 Resultado del pago:', resultado.status)
+    console.log('💰 Resultado:', resultado.status)
+
+    // 🔴 Si Octano requiere redirección 3DS
+    if (resultado.needsRedirect && resultado.redirectUrl) {
+      return NextResponse.json({
+        success: false,
+        needsRedirect: true,
+        redirectUrl: resultado.redirectUrl,
+        orderId: orderId,
+        last4,
+      })
+    }
 
     // 4. Enviar emails si el pago fue aprobado
-    if (resultado.success || resultado.status === 'approved') {
+    if (resultado.success) {
       try {
         const resend = new Resend(process.env.RESEND_API_KEY)
 
@@ -103,12 +128,12 @@ export async function POST(request) {
         `).join('')
 
         const texts = {
-          subject: isEnglish 
+          subject: isEnglish
             ? `Payment Confirmed - Order #${orderId}`
             : `Pago Confirmado - Pedido #${orderId}`,
           title: isEnglish ? 'Payment Confirmed!' : '¡Pago Confirmado!',
           greeting: isEnglish ? `Hello ${nombre},` : `Hola ${nombre},`,
-          thankYou: isEnglish 
+          thankYou: isEnglish
             ? 'Thank you for your purchase. Your payment has been processed successfully.'
             : 'Gracias por tu compra. Tu pago ha sido procesado exitosamente.',
           orderSummary: isEnglish ? 'Order Summary' : 'Resumen del Pedido',
@@ -127,7 +152,7 @@ export async function POST(request) {
           addressLabel: isEnglish ? 'Address' : 'Dirección',
           paymentMethod: isEnglish ? 'Payment Method' : 'Método de Pago',
           creditCard: isEnglish ? 'Credit/Debit Card' : 'Tarjeta de Crédito/Débito',
-          supportMessage: isEnglish 
+          supportMessage: isEnglish
             ? 'If you have any questions about your order, please contact us at'
             : 'Si tienes alguna pregunta sobre tu pedido, contáctanos en',
           regards: isEnglish ? 'Best regards,' : 'Saludos cordiales,',
@@ -163,11 +188,11 @@ export async function POST(request) {
                   <h1 style="margin: 0; font-size: 28px;">${texts.title}</h1>
                   <div class="success-badge">✓ ${texts.subject}</div>
                 </div>
-                
+
                 <div class="content">
                   <p style="font-size: 16px;">${texts.greeting}</p>
                   <p style="font-size: 16px; color: #374151;">${texts.thankYou}</p>
-                  
+
                   <div class="order-info">
                     <h2 style="margin: 0 0 15px 0; font-size: 20px; color: #111827;">${texts.orderSummary}</h2>
                     <p style="margin: 5px 0;"><strong>${texts.orderIdLabel}:</strong> #${orderId}</p>
@@ -175,7 +200,7 @@ export async function POST(request) {
                     <p style="margin: 5px 0;"><strong>${texts.cardLabel}:</strong> **** **** **** ${last4 || '****'}</p>
                     <p style="margin: 5px 0;"><strong>${texts.transactionLabel}:</strong> ${resultado.transactionId || `TXN-${Date.now()}`}</p>
                   </div>
-                  
+
                   <table class="order-table">
                     <thead>
                       <tr>
@@ -199,25 +224,25 @@ export async function POST(request) {
                       </tr>
                     </tbody>
                   </table>
-                  
+
                   <div class="customer-info">
                     <h3 style="margin: 0 0 15px 0; color: #111827;">${texts.customerInfo}</h3>
                     <p style="margin: 5px 0;"><strong>${texts.nameLabel}:</strong> ${nombre} ${apellido}</p>
                     <p style="margin: 5px 0;"><strong>${texts.emailLabel}:</strong> ${email}</p>
                     <p style="margin: 5px 0;"><strong>${texts.addressLabel}:</strong> ${direccion}, ${poblacion}, ${region}, CP ${codigoPostal}</p>
                   </div>
-                  
+
                   <div class="customer-info">
                     <h3 style="margin: 0 0 15px 0; color: #111827;">${texts.paymentMethod}</h3>
                     <p style="margin: 5px 0;">${texts.creditCard}</p>
                     <div class="card-badge">💳 •••• •••• •••• ${last4 || '****'}</div>
                   </div>
-                  
+
                   <p style="margin-top: 30px; color: #6b7280;">
                     ${texts.supportMessage} <a href="mailto:${process.env.ADMIN_EMAIL}" style="color: #111827; font-weight: bold;">${process.env.ADMIN_EMAIL}</a>
                   </p>
                 </div>
-                
+
                 <div class="footer">
                   <p>${texts.regards}<br><strong>${texts.team}</strong></p>
                   <p style="margin-top: 15px; font-size: 12px;">
@@ -256,15 +281,16 @@ export async function POST(request) {
     }
 
     return NextResponse.json({
-      success: resultado.success || resultado.status === 'approved',
-      orderId: orderId,
+      success: resultado.success,
+      orderId: resultado.orderId || orderId,
       transactionId: resultado.transactionId || `TXN-${Date.now()}`,
       last4: last4 || '****',
       message: resultado.message || (isEnglish ? 'Payment processed' : 'Pago procesado'),
     })
 
   } catch (error) {
-    console.error('❌ [PAGO] Error:', error.message)
+    console.error('❌ [PAGO] Error completo:', error)
+    console.error('❌ [PAGO] Mensaje:', error.message)
     return NextResponse.json(
       { success: false, error: error.message || 'Error interno del servidor' },
       { status: 500 }

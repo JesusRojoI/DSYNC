@@ -11,7 +11,7 @@ export default function CheckoutPage() {
   const { cartItems } = useCart()
   const router = useRouter()
 
-  // Lista de países con traducciones
+  // Lista de países
   const countriesList = [
     { code: 'MX', es: 'México', en: 'Mexico' },
     { code: 'US', es: 'Estados Unidos', en: 'United States' },
@@ -137,8 +137,8 @@ export default function CheckoutPage() {
   const handleChange = (e) => {
     const { name, value } = e.target
     let filteredValue = value
-    
-    switch(name) {
+
+    switch (name) {
       case 'nombre':
       case 'apellido':
         filteredValue = value.replace(/[^a-zA-ZáéíóúÁÉÍÓÚñÑ\s]/g, '')
@@ -156,7 +156,7 @@ export default function CheckoutPage() {
         filteredValue = value.replace(/[^a-zA-Z\s]/g, '').toUpperCase()
         break
     }
-    
+
     setFormData(prev => ({ ...prev, [name]: filteredValue }))
     if (errors[name]) {
       setErrors(prev => ({ ...prev, [name]: '' }))
@@ -192,7 +192,7 @@ export default function CheckoutPage() {
 
   const handleCvvChange = (e) => {
     let value = e.target.value
-    
+
     if (value.length < formData.cvv.length) {
       const newRaw = formData.cvv_raw.slice(0, -1)
       const newDisplay = '•'.repeat(newRaw.length)
@@ -202,15 +202,15 @@ export default function CheckoutPage() {
       }
       return
     }
-    
+
     const lastChar = value.charAt(value.length - 1)
-    
+
     if (/\d/.test(lastChar) && formData.cvv_raw.length < 4) {
       const newRaw = formData.cvv_raw + lastChar
       const newDisplay = '•'.repeat(newRaw.length)
       setFormData(prev => ({ ...prev, cvv: newDisplay, cvv_raw: newRaw }))
     }
-    
+
     if (errors.cvv) {
       setErrors(prev => ({ ...prev, cvv: '' }))
     }
@@ -232,7 +232,7 @@ export default function CheckoutPage() {
     else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(formData.email)) newErrors.email = t('checkout.validation.email_invalid')
     if (!formData.nombreTarjeta.trim()) newErrors.nombreTarjeta = t('checkout.validation.card_name_required')
     else if (formData.nombreTarjeta.trim().length < 3) newErrors.nombreTarjeta = t('checkout.validation.card_name_invalid')
-    
+
     const numeroTarjetaLimpio = formData.numeroTarjeta.replace(/\s/g, '')
     if (!numeroTarjetaLimpio) newErrors.numeroTarjeta = t('checkout.validation.card_number_required')
     else if (!/^\d{16}$/.test(numeroTarjetaLimpio)) newErrors.numeroTarjeta = t('checkout.validation.card_number_invalid')
@@ -269,6 +269,9 @@ export default function CheckoutPage() {
     setErrors({})
 
     try {
+      // 🌐 URL de retorno para el flujo 3DS de Octano
+      const redirectUrl = `${window.location.origin}/compra-exitosa`
+
       const response = await fetch('/api/create-payment', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
@@ -290,11 +293,23 @@ export default function CheckoutPage() {
           iva: iva,
           total: total,
           language: i18n.language,
+          redirectUrl, // 👈 URL de retorno para 3DS
         }),
       })
 
       const data = await response.json()
-      if (!response.ok || !data.success) throw new Error(data.error || t('checkout.validation.payment_error'))
+
+      // 🔴 Si Octano requiere autenticación 3DS, redirigimos al usuario
+      if (data.needsRedirect && data.redirectUrl) {
+        sessionStorage.setItem('lastOrderId', data.orderId)
+        sessionStorage.setItem('lastOrderTotal', formatPrice(total))
+        window.location.href = data.redirectUrl
+        return
+      }
+
+      if (!response.ok || !data.success) {
+        throw new Error(data.error || t('checkout.validation.payment_error'))
+      }
 
       sessionStorage.setItem('lastOrderId', data.orderId)
       sessionStorage.setItem('lastOrderTotal', formatPrice(total))
@@ -330,7 +345,7 @@ export default function CheckoutPage() {
               <div className="lg:col-span-2 space-y-8">
                 <div className="bg-white rounded-2xl shadow-lg p-8">
                   <h2 className="text-2xl font-bold text-gray-900 mb-6">{t('checkout.your_data')}</h2>
-                  
+
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                     <div>
                       <label className="block text-sm font-medium text-gray-700 mb-2">{t('checkout.first_name')} *</label>
@@ -476,7 +491,7 @@ export default function CheckoutPage() {
               <div className="lg:col-span-1">
                 <div className="bg-white rounded-2xl shadow-lg p-8 sticky top-24">
                   <h2 className="text-2xl font-bold text-gray-900 mb-6">{t('checkout.your_investment')}</h2>
-                  
+
                   <div className="space-y-4 mb-6">
                     {cartItems.map((item) => (
                       <div key={item.id} className="flex justify-between items-start">
